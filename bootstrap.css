@@ -1,3 +1,8 @@
+.width-fill {
+	margin-left: -0.7rem;
+	margin-right: -0.7rem;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");
 :root {
 	--blue: #2c3e50;
@@ -166,12 +171,11 @@ sup {
 }
 
 a {
-	color: #2c3e50;
-	text-decoration: none;
+	color: #18bc9c;
 	background-color: transparent;
 }
 a:hover {
-	color: #11181f;
+	color: #14836d;
 	text-decoration: underline;
 }
 
