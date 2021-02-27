@@ -2,23 +2,25 @@
 <html lang="en" style="scroll-behavior: smooth">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Nostromo Registration</title>
+		<title>Nostromo: Book your seat!</title>
 		<link rel="icon" href="images/rocket.svg" />
 		<meta
 			name="description"
 			content="The Weyland-Yutany Corp invitation site!"
 		/>
+
 		<link rel="stylesheet" href="driften-stars/stars.css" />
 		<link rel="stylesheet" href="../bootstrap.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav
-			class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top animated-opacity"
-		>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 			<section class="container-fluid">
-				<a class="navbar-brand" href="../index.html" title="Home"
+				<a
+					class="navbar-brand animated-opacity"
+					href="../index.html"
+					title="Home"
 					>Joedmin's page</a
 				>
 				<button
@@ -33,29 +35,29 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div
-					class="collapse navbar-collapse"
+					class="collapse navbar-collapse rounded"
 					id="navbarSupportedContent"
 				>
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
+						<li class="nav-item animated-opacity">
 							<a
 								class="nav-link"
-								href="tanks.html"
+								href="../TanksPage/tanks.html"
 								title="Page focused on WWII tanks"
 								>WWII Tanks</a
 							>
 						</li>
 						<li class="nav-item active">
 							<a
-								class="nav-link"
-								href="../AlienPage/alien.html"
+								class="nav-link animated-opacity"
+								href="alien.html"
 								title="Book your seat on the Nostromo space station!"
 								>Get on Nostromo</a
 							>
 						</li>
 						<li class="nav-item">
 							<a
-								class="nav-link"
+								class="nav-link animated-opacity"
 								href="https://github.com/Joedmin580"
 								target="_blank"
 								title="My GitHub profile"
@@ -72,23 +74,106 @@
 			class="container pt-3 mt-5 pb-3 text-center"
 			style="font-family: Sevastopol-Interface"
 		>
-			<div class="rounded bg-light">
-				<h1>Welcome people!</h1>
+			<div class="rounded px-1" id="text-bg">
+				<h1 class="display-3">Welcome people!</h1>
 				<p>
-					We are the Weyland-Yutany Corp and we are searching just for
-					YOU! Join our newest
+					We are the Weyland-Yutani Corporation and we are searching
+					just for YOU! Explore the space and foreign planets on our
+					newest interstellar cruiser, the Nostromo!
 				</p>
+				<h1>About</h1>
+				<p>
+					The Nostromo is based on the Lockmart CM-88B Bison, but it
+					is much more safer, reliable and so much stronger! We spent
+					over $42&nbsp;000&nbsp;000 to the most modern technologies,
+					especially your safety!
+				</p>
+				<h1>A change to get job!</h1>
+				<p>
+					We are currently recruiting for a new crew for the Nostromo
+					and YOU can be one of them!
+				</p>
+				<ul>
+					<header>Available job posts are:</header>
+					<li>Executive officer</li>
+					<li>Science officer</li>
+					<li>Navigation Officer</li>
+					<li>Chief Engineer</li>
+				</ul>
+				<ul>
+					<header>Occupied job posts are:</header>
+					<li>Captain/Ship's Master - Arthur Dallas</li>
+					<li>Warrant Officer - Ellen Ripley</li>
+					<li>
+						Engineers Mate/Engineering Technician - Samuel Brett
+					</li>
+					<li>Ship's cat - Jones</li>
+				</ul>
+				<h1>What will you get?</h1>
+				<p>
+					You will be able to travel though the whole space, meet
+					aliens and sleep using hypersleep chambers! You will meet
+					awesome people and you will work with the Ellen Ripley! What
+					else would you want?
+				</p>
+				<h1>Contact us</h1>
+				<p>
+					If you are interested don't hesitate and contact us!<br />
+					You are able to find us in Tokyo, London, San Francisco, Sea
+					of Tranquillity and on Thedus.
+				</p>
+				<!-- Gallery -->
+				<h1>Gallery</h1>
+				<div class="card-group">
+					<div class="card px-1">
+						<img
+							src="Images/Compressed/Dallan.jpg"
+							class="card-img-top rounded"
+							alt="Arthur Dallas"
+						/>
+						<div class="card-body" style="padding-top: 0">
+							<p class="card-text">Arthur Dallas</p>
+						</div>
+					</div>
+					<div class="card px-1">
+						<img
+							src="Images/Compressed/Nostromo.jpg"
+							class="card-img-top rounded"
+							alt="Model of Nostromo"
+						/>
+						<div class="card-body" style="padding-top: 0">
+							<p class="card-text">Model of Nostromo</p>
+						</div>
+					</div>
+					<div class="card px-1">
+						<img
+							src="Images/Compressed/Jones_Ripley.jpg"
+							class="card-img-top rounded"
+							alt="Ellen Ripley and Jones"
+						/>
+						<div class="card-body" style="padding-top: 0">
+							<p class="card-text">Ellen Ripley and Jones</p>
+						</div>
+					</div>
+				</div>
+				<q>
+					<em
+						>This is commercial towing vehicle Nostromo out of the
+						Solomons, registration number
+						one-eight-oh-niner-two-four-six-oh-niner.
+					</em>
+				</q>
+				<p style="padding-left: 30%">- Ripley</p>
 			</div>
-
 			<img
 				src="Images/weiland_yutany.svg"
-				width="500rem"
+				width="50%"
 				style="display: block; margin: auto"
 			/>
 		</main>
 
 		<!-- BG -->
-		<canvas id="stars"> </canvas>
+		<canvas id="stars"></canvas>
 
 		<!-- Scripts -->
 		<script

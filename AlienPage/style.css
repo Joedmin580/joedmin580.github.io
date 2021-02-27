@@ -1,17 +1,55 @@
-.animated-opacity {
-	opacity: 25%;
-	transition: ease-in-out;
-	transition-duration: 0.5s;
-}
-.animated-opacity:hover {
-	opacity: 75%;
-	transition: ease-in-out;
-	transition-duration: 0.5s;
-}
-
 @font-face {
 	font-family: "Sevastopol-Interface";
 	src: url("Sevastopol-Interface.ttf") format("truetype");
 }
 
-/* 00C21C */
+.animated-opacity {
+	opacity: 25%;
+	transition: ease-in-out;
+	transition-duration: 0.3s;
+}
+.animated-opacity:hover {
+	opacity: 75%;
+	transition: ease-in-out;
+	transition-duration: 0.3s;
+}
+
+#text-bg {
+	background-color: rgba(255, 255, 255, 0.02);
+	color: whitesmoke;
+	line-height: 35px;
+	font-size: 200%;
+}
+
+#text-bg > ul,
+ol {
+	margin-top: -0.4rem;
+	margin-bottom: 1rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#text-bg > h1 {
+	margin-bottom: -0.5rem;
+	list-style: none;
+}
+
+#text-bg > * > header {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 115%;
+}
+
+.card,
+.card-group,
+.card-body {
+	background-color: transparent !important;
+	opacity: 100%;
+	border-width: 0;
+}
+
+nav {
+	background: radial-gradient(ellipse at center, #1a1a1a 0%, #000000 100%);
+}

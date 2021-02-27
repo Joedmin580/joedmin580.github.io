@@ -5,8 +5,12 @@ body {
 }
 
 body {
-	background-color: #31102f;
-	background: radial-gradient(ellipse at center, #31102f 0%, #280b29 100%);
+	/* Original */
+	/* background: radial-gradient(ellipse at center, #31102f 0%, #280b29 100%); */
+	/* Green */
+	/* background: radial-gradient(ellipse at center, #020703 0%, #11311f 100%); */
+	/* Black */
+	background: radial-gradient(ellipse at center, #2b2b2b 0%, #000000 100%);
 }
 
 #stars {
