@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Nostromo Registration</title>
+		<link rel="icon" href="images/rocket.svg" />
+		<meta
+			name="description"
+			content="The Weyland-Yutany Corp invitation site!"
+		/>
+		<link rel="stylesheet" href="driften-stars/stars.css" />
+		<link rel="stylesheet" href="../bootstrap.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav
+			class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top animated-opacity"
+		>
+			<section class="container-fluid">
+				<a class="navbar-brand" href="../index.html" title="Home"
+					>Joedmin's page</a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse"
+					id="navbarSupportedContent"
+				>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="tanks.html"
+								title="Page focused on WWII tanks"
+								>WWII Tanks</a
+							>
+						</li>
+						<li class="nav-item active">
+							<a
+								class="nav-link"
+								href="../AlienPage/alien.html"
+								title="Book your seat on the Nostromo space station!"
+								>Get on Nostromo</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="https://github.com/Joedmin580"
+								target="_blank"
+								title="My GitHub profile"
+								>GitHub</a
+							>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</nav>
+
+		<!-- Article -->
+		<main
+			class="container pt-3 mt-5 pb-3 text-center"
+			style="font-family: Sevastopol-Interface"
+		>
+			<div class="rounded bg-light">
+				<h1>Welcome people!</h1>
+				<p>
+					We are the Weyland-Yutany Corp and we are searching just for
+					YOU! Join our newest
+				</p>
+			</div>
+
+			<img
+				src="Images/weiland_yutany.svg"
+				width="500rem"
+				style="display: block; margin: auto"
+			/>
+		</main>
+
+		<!-- BG -->
+		<canvas id="stars"> </canvas>
+
+		<!-- Scripts -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
+		<script src="driften-stars/script.js"></script>
+	</body>
+</html>

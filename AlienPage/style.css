@@ -1,0 +1,17 @@
+.animated-opacity {
+	opacity: 25%;
+	transition: ease-in-out;
+	transition-duration: 0.5s;
+}
+.animated-opacity:hover {
+	opacity: 75%;
+	transition: ease-in-out;
+	transition-duration: 0.5s;
+}
+
+@font-face {
+	font-family: "Sevastopol-Interface";
+	src: url("Sevastopol-Interface.ttf") format("truetype");
+}
+
+/* 00C21C */
