@@ -7,6 +7,15 @@
 	#text-bg {
 		font-size: 130%;
 	}
+
+	h1 {
+		font-size: 160%;
+	}
+
+	.display-4 {
+		font-size: 195%;
+	}
+
 	#text-bg > * > header {
 		font-size: 145%;
 		margin-bottom: -0.5rem;
