@@ -5,7 +5,7 @@
  */
 
 // Settings
-var particleCount = 40,
+var particleCount = 60,
 	flareCount = 10,
 	motion = 0.05,
 	tilt = 0.05,

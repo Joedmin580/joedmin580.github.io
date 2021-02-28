@@ -3,6 +3,8 @@
 	src: url("Sevastopol-Interface.ttf") format("truetype");
 }
 
+/* Responsible */
+/* Phones */
 @media only screen and (max-width: 600px) {
 	#text-bg {
 		font-size: 130%;
@@ -25,7 +27,7 @@
 		font-size: 115%;
 	}
 }
-
+/* Desktop and tablets */
 @media only screen and (min-width: 600px) {
 	#text-bg {
 		font-size: 170%;
