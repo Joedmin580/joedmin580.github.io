@@ -91,6 +91,10 @@ li {
 	border-width: 0;
 }
 
+.highlight {
+	color: #a2e104;
+}
+
 nav {
 	background: radial-gradient(ellipse at center, #1a1a1a 0%, #000000 100%);
 }
