@@ -9529,7 +9529,7 @@ a.text-dark:focus {
 }
 
 .bg-primary .navbar-nav .active > .nav-link {
-	color: #18bc9c !important;
+	color: #18bc9c;
 }
 
 .bg-dark {
