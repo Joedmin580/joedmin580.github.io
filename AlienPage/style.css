@@ -26,6 +26,9 @@
 		margin: 0.5rem 0 -0.7rem 0;
 		font-size: 115%;
 	}
+	.callback-code {
+		width: 0.6rem;
+	}
 }
 /* Desktop and tablets */
 @media only screen and (min-width: 600px) {
@@ -48,6 +51,9 @@
 		opacity: 75%;
 		transition: ease-in-out;
 		transition-duration: 0.3s;
+	}
+	.callback-code {
+		width: 0.9rem;
 	}
 }
 
@@ -104,4 +110,9 @@ nav {
 
 .nav-item.active > .nav-link {
 	color: #a2e104 !important;
+}
+
+.callback-code {
+	margin-right: 0.2rem;
+	margin-left: 0.2rem;
 }
