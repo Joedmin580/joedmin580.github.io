@@ -39,17 +39,16 @@
 	#text-bg > * > li {
 		margin: 0.5rem 0 -0.7rem 0;
 	}
-}
-
-.animated-opacity {
-	opacity: 25%;
-	transition: ease-in-out;
-	transition-duration: 0.3s;
-}
-.animated-opacity:hover {
-	opacity: 75%;
-	transition: ease-in-out;
-	transition-duration: 0.3s;
+	.animated-opacity {
+		opacity: 25%;
+		transition: ease-in-out;
+		transition-duration: 0.3s;
+	}
+	.animated-opacity:hover {
+		opacity: 75%;
+		transition: ease-in-out;
+		transition-duration: 0.3s;
+	}
 }
 
 #text-bg {
