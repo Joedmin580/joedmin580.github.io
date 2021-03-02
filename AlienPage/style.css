@@ -97,3 +97,11 @@ li {
 nav {
 	background: radial-gradient(ellipse at center, #1a1a1a 0%, #000000 100%);
 }
+
+.nav-link:hover {
+	color: whitesmoke !important;
+}
+
+.nav-item.active > .nav-link {
+	color: #a2e104 !important;
+}
