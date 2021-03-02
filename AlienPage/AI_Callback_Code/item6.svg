@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="52.916664mm"
+   height="66.145821mm"
+   viewBox="0 0 52.916664 66.145821"
+   version="1.1"
+   id="svg22"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="item6.svg">
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="77.078902"
+     inkscape:cy="141.75016"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     inkscape:window-width="958"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid24"
+       originx="-63.500002"
+       originy="-63.5" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata19">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Vrstva 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-63.5,-63.5)">
+    <rect
+       style="fill:#ffffff;stroke-width:0.264583"
+       id="rect26"
+       width="26.458334"
+       height="13.229167"
+       x="63.5"
+       y="116.41666" />
+    <rect
+       style="fill:#ffffff;stroke-width:0.264583"
+       id="rect26-3"
+       width="39.6875"
+       height="13.229167"
+       x="76.729164"
+       y="103.1875" />
+    <rect
+       style="fill:#ffffff;stroke-width:0.341575"
+       id="rect26-3-7"
+       width="66.145836"
+       height="13.229167"
+       x="-129.64583"
+       y="76.729172"
+       transform="rotate(-90)" />
+    <rect
+       style="fill:#ffffff;stroke-width:0.199757"
+       id="rect26-3-7-1"
+       width="11.90625"
+       height="25.135422"
+       x="-75.40625"
+       y="76.729164"
+       transform="rotate(-90)" />
+  </g>
+</svg>
