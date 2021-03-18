@@ -1,0 +1,21 @@
+body {
+	background: #3a1c71; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#ffaf7b,
+		#d76d77,
+		#3a1c71
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ffaf7b,
+		#d76d77,
+		#3a1c71
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+main {
+	background-color: whitesmoke;
+	margin: 5rem;
+	padding: 2rem;
+	border-radius: 1rem;
+}
