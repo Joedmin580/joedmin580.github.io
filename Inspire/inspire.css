@@ -1,8 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap");
 
+@media only screen and (max-width: 600px) {
+	html {
+		font-size: 1.1em;
+	}
+	#quote,
+	#author {
+		margin: 0.4em;
+		max-width: 16em;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	html {
+		font-size: 1.23em;
+	}
+	#quote,
+	#author {
+		margin: 0.4em;
+		max-width: 32em;
+	}
+}
+
 html {
 	font-family: "Open Sans", sans-serif;
-	font-size: 1.23em;
 	color: whitesmoke;
 }
 body {
@@ -33,5 +54,4 @@ body {
 #quote,
 #author {
 	margin: 0.4em;
-	max-width: 32em;
 }
