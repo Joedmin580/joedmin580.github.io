@@ -12,4 +12,4 @@ function getQuote() {
 		});
 }
 
-document.onload(getQuote());
+document.onload = getQuote();
