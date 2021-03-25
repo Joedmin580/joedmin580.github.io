@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap");
 
+/* Phones */
 @media only screen and (max-width: 600px) {
-	html {
+	main {
 		font-size: 1.1em;
 	}
 	#quote,
@@ -11,8 +12,9 @@
 	}
 }
 
+/* Desktop & tablets */
 @media only screen and (min-width: 600px) {
-	html {
+	main {
 		font-size: 1.23em;
 	}
 	#quote,
@@ -20,13 +22,24 @@
 		margin: 0.4em;
 		max-width: 32em;
 	}
+	.animated-opacity {
+		opacity: 60%;
+		transition: ease-in-out;
+		transition-duration: 0.3s;
+	}
+	.animated-opacity:hover {
+		opacity: 100%;
+		transition: ease-in-out;
+		transition-duration: 0.3s;
+	}
 }
 
-html {
+body {
 	font-family: "Open Sans", sans-serif;
 	color: whitesmoke;
 }
-body {
+
+main {
 	background: #ff5f6d; /* fallback for old browsers */
 	background: -webkit-linear-gradient(
 		to right,
@@ -54,4 +67,14 @@ body {
 #quote,
 #author {
 	margin: 0.4em;
+}
+
+.navbar {
+	background-color: transparent !important;
+}
+.nav-item.active > .nav-link {
+	color: red !important;
+}
+.nav-link:hover {
+	color: whitesmoke !important;
 }
