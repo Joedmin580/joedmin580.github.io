@@ -1,4 +1,4 @@
-try {
+function getQuote() {
 	fetch("https://api.quotable.io/random")
 		.then(function (response) {
 			return response.json();
@@ -10,6 +10,6 @@ try {
 			console.log(data.content);
 			console.log(data.author);
 		});
-} catch {
-	document.getElementById("quote").innerHTML = "Error: Can't get quote.";
 }
+
+document.onload(getQuote());
