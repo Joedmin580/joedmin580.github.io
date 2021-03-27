@@ -5,9 +5,16 @@
 	main {
 		font-size: 1.1em;
 	}
-	footer {
+	footer p {
+		font-size: 0.8em;
+	}
+	.hint {
 		max-width: 15em;
-		font-size: 0.8rem;
+		font-size: 0.7em;
+		bottom: 9rem;
+	}
+	.icon {
+		height: 1.1em;
 	}
 	#quote,
 	#author {
@@ -21,13 +28,15 @@
 	main {
 		font-size: 1.23em;
 	}
-	footer {
-		font-size: 1.05rem;
+	footer p {
+		font-size: 0.94em;
 	}
-	#quote,
-	#author {
-		margin: 0.4em;
-		max-width: 32em;
+	.hint {
+		font-size: 0.8em;
+		bottom: 15rem;
+	}
+	.icon {
+		height: 1.23em;
 	}
 	.animated-opacity {
 		opacity: 60%;
@@ -38,6 +47,11 @@
 		opacity: 100%;
 		transition: ease-in-out;
 		transition-duration: 0.3s;
+	}
+	#quote,
+	#author {
+		margin: 0.4em;
+		max-width: 32em;
 	}
 }
 
@@ -63,6 +77,13 @@ main {
 footer {
 	position: fixed;
 	bottom: 3rem;
+}
+footer p {
+	opacity: 60%;
+}
+
+.hint {
+	position: fixed;
 	opacity: 45%;
 	text-align: center;
 }
