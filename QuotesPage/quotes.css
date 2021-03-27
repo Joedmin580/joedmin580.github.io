@@ -53,6 +53,14 @@ main {
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+footer {
+	position: fixed;
+	bottom: 7rem;
+	opacity: 50%;
+	text-align: center;
+	max-width: 10em;
+}
+
 .quote {
 	height: 100%;
 	width: 100%;
