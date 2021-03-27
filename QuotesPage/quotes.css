@@ -5,6 +5,9 @@
 	main {
 		font-size: 1.1em;
 	}
+	footer {
+		max-width: 10em;
+	}
 	#quote,
 	#author {
 		margin: 0.4em;
@@ -17,6 +20,7 @@
 	main {
 		font-size: 1.23em;
 	}
+
 	#quote,
 	#author {
 		margin: 0.4em;
@@ -58,7 +62,6 @@ footer {
 	bottom: 7rem;
 	opacity: 50%;
 	text-align: center;
-	max-width: 10em;
 }
 
 .quote {
