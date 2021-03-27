@@ -87,7 +87,7 @@ footer {
 	background-color: transparent !important;
 }
 .nav-item.active > .nav-link {
-	color: red !important;
+	color: crimson !important;
 }
 .nav-link:hover {
 	color: whitesmoke !important;
