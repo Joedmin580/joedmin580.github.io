@@ -57,6 +57,14 @@
 	}
 }
 
+body {
+	cursor: url("Images/Original/alien_isolation_cursor.png"), auto;
+}
+
+a {
+	cursor: url("Images/Original/alien_isolation_cursor_pointer.png"), auto;
+}
+
 #text-bg {
 	opacity: 100%;
 	color: whitesmoke;
