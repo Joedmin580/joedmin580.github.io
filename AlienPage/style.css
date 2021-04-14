@@ -9,20 +9,17 @@
 	#text-bg {
 		font-size: 130%;
 	}
-
 	h1 {
 		font-size: 160%;
 	}
-
 	.display-4 {
 		font-size: 195%;
 	}
-
-	#text-bg > * > header {
+	header {
 		font-size: 145%;
 		margin-bottom: -0.5rem;
 	}
-	#text-bg > * > li {
+	li {
 		margin: 0.5rem 0 -0.7rem 0;
 		font-size: 115%;
 	}
@@ -35,11 +32,11 @@
 	#text-bg {
 		font-size: 170%;
 	}
-	#text-bg > * > header {
+	header {
 		font-size: 130%;
 		margin-bottom: 10rem;
 	}
-	#text-bg > * > li {
+	li {
 		margin: 0.5rem 0 -0.7rem 0;
 	}
 	.animated-opacity {
@@ -57,50 +54,48 @@
 	}
 }
 
+/* Custom cursors */
 body {
 	cursor: url("Images/Original/alien_isolation_cursor.png"), auto;
 }
-
 a {
 	cursor: url("Images/Original/alien_isolation_cursor_pointer.png"), auto;
 }
 
+/* Other */
 #text-bg {
-	opacity: 100%;
 	color: whitesmoke;
 	line-height: 1.5rem;
 }
 
-#text-bg > ul,
+ul,
 ol {
 	margin-top: -0.4rem;
 	margin-bottom: 1.5rem;
 	list-style: none;
 	line-height: 1.39rem;
-	padding: 0;
 }
 
-#text-bg > h1 {
+h1 {
 	margin-bottom: -0.5rem;
 	list-style: none;
 }
 
-#text-bg > * > header,
-li {
-	text-align: center;
-	padding: 0;
+#text-bg > * > header {
+	margin: 1rem 0 -0.5rem 0;
 }
 
-#text-bg > * > header {
+ol,
+ul,
+li,
+header {
 	padding: 0;
-	margin: 1rem 0 -0.5rem 0;
 }
 
 .card,
 .card-group,
 .card-body {
 	background-color: transparent !important;
-	opacity: 100%;
 	border-width: 0;
 }
 
