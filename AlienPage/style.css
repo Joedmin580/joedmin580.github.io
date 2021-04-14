@@ -15,11 +15,12 @@
 	.display-4 {
 		font-size: 195%;
 	}
-	header {
+
+	body:not(nav) > header {
 		font-size: 145%;
 		margin-bottom: -0.5rem;
 	}
-	li {
+	body:not(nav) > li {
 		margin: 0.5rem 0 -0.7rem 0;
 		font-size: 115%;
 	}
@@ -32,11 +33,11 @@
 	#text-bg {
 		font-size: 170%;
 	}
-	header {
+	body:not(nav) > header {
 		font-size: 130%;
 		margin-bottom: 10rem;
 	}
-	li {
+	body:not(nav) > li {
 		margin: 0.5rem 0 -0.7rem 0;
 	}
 	.animated-opacity {
@@ -58,65 +59,60 @@
 body {
 	cursor: url("Images/Original/alien_isolation_cursor.png"), auto;
 }
-a {
-	cursor: url("Images/Original/alien_isolation_cursor_pointer.png"), auto;
+a,
+button {
+	cursor: url("Images/Original/alien_isolation_cursor_pointer.png"), auto !important;
 }
 
-/* Other */
+/* Spacings */
 #text-bg {
-	color: whitesmoke;
 	line-height: 1.5rem;
 }
-
-ul,
-ol {
+body:not(nav) > ul,
+body:not(nav) > ol {
 	margin-top: -0.4rem;
 	margin-bottom: 1.5rem;
 	list-style: none;
 	line-height: 1.39rem;
 }
-
 h1 {
 	margin-bottom: -0.5rem;
 	list-style: none;
 }
-
-#text-bg > * > header {
+body:not(nav) > header {
 	margin: 1rem 0 -0.5rem 0;
 }
-
 ol,
 ul,
 li,
 header {
 	padding: 0;
 }
+.callback-code {
+	margin: 0 0.2rem;
+}
 
+/* Colors, borders, etc. */
+#text-bg {
+	color: whitesmoke;
+}
 .card,
 .card-group,
 .card-body {
 	background-color: transparent !important;
 	border-width: 0;
 }
-
 .highlight {
 	color: #a2e104;
 }
-
 nav {
 	background: radial-gradient(ellipse at center, #1a1a1a 0%, #000000 100%);
 }
-
 .nav-link:hover {
 	color: whitesmoke !important;
 }
-
 .nav-item.active .nav-link {
 	color: #a2e104 !important;
-}
-
-.callback-code {
-	margin: 0 0.2rem;
 }
 
 /* 
