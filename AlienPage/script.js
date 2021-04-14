@@ -11,6 +11,7 @@ function playSound() {
 	var sound = soundsArray[randomNumber];
 
 	var audio = new Audio(sound);
+	console.log(`Playing ${sound}`);
 	audio.play();
 }
 
