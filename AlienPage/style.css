@@ -15,12 +15,12 @@
 	.display-4 {
 		font-size: 195%;
 	}
-
-	body:not(nav) > header {
+	header {
 		font-size: 145%;
 		margin-bottom: -0.5rem;
 	}
-	body:not(nav) > li {
+	ol:not(.navbar-nav) li,
+	ul:not(.navbar-nav) li {
 		margin: 0.5rem 0 -0.7rem 0;
 		font-size: 115%;
 	}
@@ -33,11 +33,12 @@
 	#text-bg {
 		font-size: 170%;
 	}
-	body:not(nav) > header {
+	header {
 		font-size: 130%;
 		margin-bottom: 10rem;
 	}
-	body:not(nav) > li {
+	ol:not(.navbar-nav) li,
+	ul:not(.navbar-nav) li {
 		margin: 0.5rem 0 -0.7rem 0;
 	}
 	.animated-opacity {
@@ -68,8 +69,8 @@ button {
 #text-bg {
 	line-height: 1.5rem;
 }
-body:not(nav) > ul,
-body:not(nav) > ol {
+ul:not(.navbar-nav),
+ol:not(.navbar-nav) {
 	margin-top: -0.4rem;
 	margin-bottom: 1.5rem;
 	list-style: none;
@@ -79,12 +80,12 @@ h1 {
 	margin-bottom: -0.5rem;
 	list-style: none;
 }
-body:not(nav) > header {
+header {
 	margin: 1rem 0 -0.5rem 0;
 }
-ol,
-ul,
-li,
+ol:not(.navbar-nav),
+ul:not(.navbar-nav),
+li:not(.nav-item),
 header {
 	padding: 0;
 }
