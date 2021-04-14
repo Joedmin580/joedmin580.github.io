@@ -1,9 +1,3 @@
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-
 body {
 	/* Original */
 	/* background: radial-gradient(ellipse at center, #31102f 0%, #280b29 100%); */
@@ -18,7 +12,7 @@ body {
 	width: 100%;
 	height: 16rem;
 	height: 100vh;
-	z-index: 1;
+	z-index: -1;
 	top: 0;
 	left: 0;
 }
