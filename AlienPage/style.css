@@ -115,6 +115,12 @@ nav {
 .nav-item.active .nav-link {
 	color: #a2e104 !important;
 }
+.btn-sound {
+	background-color: transparent;
+	border: transparent solid 0;
+	color: inherit;
+	padding: 0;
+}
 
 /* 
 From Copyright (c) 2021 by Cory Hughart (https://codepen.io/cr0ybot/pen/zNyYeW) 
