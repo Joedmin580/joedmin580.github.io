@@ -43,9 +43,9 @@
 					id="navbarSupportedContent"
 				>
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item animated-opacity">
+						<li class="nav-item">
 							<a
-								class="nav-link"
+								class="nav-link animated-opacity"
 								href="../TanksPage/tanks.html"
 								title="Page focused on WWII tanks"
 								>WWII Tanks</a
@@ -59,9 +59,9 @@
 								>Get on Nostromo</a
 							>
 						</li>
-						<li class="nav-item animated-opacity">
+						<li class="nav-item">
 							<a
-								class="nav-link"
+								class="nav-link animated-opacity"
 								href="../QuotesPage/quotes.html"
 								title="Quotes of famous people"
 								>Quotes</a
@@ -86,7 +86,7 @@
 			class="container pt-3 mt-5 pb-3 text-center"
 			style="font-family: Sevastopol-Interface"
 		>
-			<div class="rounded px-1" id="text-bg">
+			<section class="rounded px-1" id="text-bg">
 				<h1 class="display-4">Welcome people!</h1>
 				<p>
 					We are the Weyland-Yutani Corporation and
@@ -159,8 +159,11 @@
 				<h1>What will you get?</h1>
 				<p>
 					You will be able to travel through the
-					<span class="highlight">whole space</span>, meet aliens and
-					sleep using hypersleep chambers! You will meet awesome
+					<span class="highlight">whole space</span>, meet
+					<button class="btn-sound" onclick="playSound()">
+						aliens
+					</button>
+					and sleep using hypersleep chambers! You will meet awesome
 					people and you will work
 					<img
 						src="AI_Callback_Code/item1.svg"
@@ -222,7 +225,7 @@
 					</em>
 				</q>
 				<p style="padding-left: 30%">- Ripley</p>
-			</div>
+			</section>
 			<img
 				src="Images/weiland_yutany.svg"
 				width="50%"
@@ -234,7 +237,11 @@
 		<canvas id="stars"></canvas>
 
 		<!-- Audio -->
-		<audio src="Alien_Isolation_MainMenu.mp3" autoplay loop></audio>
+		<audio
+			src="./Sounds/Alien_Isolation_MainMenu.mp3"
+			autoplay
+			loop
+		></audio>
 
 		<!-- Scripts -->
 		<script
