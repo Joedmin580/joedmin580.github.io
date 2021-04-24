@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+/* Responsible */
+/* Phones */
+@media only screen and (max-width: 600px) {
+	.bg-blue,
+	.bg-white {
+		flex-direction: column;
+		row-gap: 0;
+	}
+}
+
+/* Desktop & tablets */
+@media only screen and (min-width: 600px) {
+	.card-text {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+		max-width: 40rem;
+	}
+	.bg-blue,
+	.bg-white {
+		flex-direction: row;
+	}
+}
+
+html {
+	scrollbar-width: thin !important;
+}
+
+/* Typography */
+.display-4 {
+	font-weight: 500;
+	display: inline;
+}
+.card-text {
+	font-weight: 300;
+	font-family: "Roboto", sans-serif;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Sizing, spacing */
+article {
+	padding: 3rem 2rem;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg-blue,
+.bg-white {
+	/* display: flex; */
+}
+.card-body {
+	width: 100vh;
+}
+img {
+	display: block;
+}
+
+/* Colors */
+.bg-blue {
+	background-color: #0000ff;
+	color: whitesmoke;
+}
+.bg-white {
+	background-color: #ffffff;
+	color: black;
+}
+
+nav.navbar {
+	background-color: #000c66;
+}
+a {
+	color: #75e6da;
+}
+a:hover {
+	color: #75e6da;
+}
