@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap");
 
 /* Responsible */
 /* Phones */
@@ -12,11 +12,10 @@
 	.placeholder {
 		display: none;
 	}
-	.bg-white .card-body {
+	.bg-blue .card-body {
 		flex: 0 0 auto;
 	}
 }
-
 /* Desktop & tablets */
 @media only screen and (min-width: 600px) {
 	.card-body {
@@ -31,60 +30,89 @@
 	}
 }
 
+/* Root */
 html {
 	scrollbar-width: thin !important;
 }
+body {
+	font-family: "Roboto", sans-serif;
+}
 
 /* Typography */
+.display-1,
 .display-4 {
 	font-weight: 500;
+}
+.display-1 {
+	display: block;
+}
+.display-4 {
 	display: inline;
 }
 .card-text {
-	font-weight: 300;
-	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+.hint {
+	font-weight: 500;
+	font-style: italic;
+	opacity: 60%;
+	display: block;
 }
 a {
 	text-decoration: none;
 }
-a:hover {
+a:hover:not(.nav-link) {
 	text-decoration: underline;
 }
 
 /* Sizing, spacing */
 article {
-	padding: 3rem 2rem;
+	padding: 4rem 3rem;
 	height: calc(100vh - 3rem);
 	display: flex;
 	align-items: center;
 }
 img {
-	display: block;
+	/* display: block; */
 }
-.bg-blue:nth-child(2):not(img) .card-body,
-.bg-white:nth-child(2):not(img) .card-body {
+.tank {
+	margin: 3rem 2rem 0;
+	height: 40% !important;
+	/* width: 100% !important; */
+}
+.bg-blue:nth-child(1):not(img) .card-body,
+.bg-white:nth-child(1):not(img) .card-body {
 	width: 100%;
+	background-color: red !important;
 }
-.bg-blue .card-body {
-	flex: 0 1 auto;
+.bg-white .card-body {
+	flex: 0 0 auto;
+}
+.card-body {
+	padding: 1rem;
+}
+.welcome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Colors */
 .bg-blue {
-	background-color: #0000ff;
+	background-color: #000c66;
 	color: whitesmoke;
+}
+a {
+	color: #d53900;
+}
+a:hover {
+	color: #c53500;
 }
 .bg-white {
 	background-color: #ffffff;
 	color: black;
 }
-
 nav.navbar {
-	background-color: #000c66;
-}
-a {
-	color: #75e6da;
-}
-a:hover {
-	color: #75e6da;
+	background-color: #050a30;
 }
