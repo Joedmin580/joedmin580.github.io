@@ -40,28 +40,6 @@
 		width: auto;
 	}
 }
-/* Phones landscape
-@media only screen and (max-height: 500px) and (max-width: 1000px) {
-	.card-body {
-		max-width: calc(100vh * 0.8);
-	}
-	.card-text {
-		line-height: 1rem;
-		font-size: 50% !important;
-	}
-	.tank {
-		height: calc(100vh * 0.5);
-		width: auto;
-		aspect-ratio: 16/9;
-	}
-	.logo {
-		height: calc(100vh * 0.25);
-		width: calc(100vh * 0.25);
-	}
-	.bg-blue {
-		background-color: red !important;
-	}
-} */
 /* Desktop & tablets */
 @media only screen and (min-width: 900px) {
 	.card-body {
@@ -96,6 +74,10 @@ html {
 }
 body {
 	font-family: "Roboto", sans-serif;
+}
+nav {
+	font-family: "Roboto", sans-serif !important;
+	font-weight: 500 !important;
 }
 
 /* Typography */
