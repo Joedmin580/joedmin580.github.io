@@ -10,14 +10,14 @@
 	li,
 	a {
 		line-height: calc(100vh * 0.038);
-		font-size: calc(100vh * 0.021);
+		font-size: calc(100vh * 0.025);
 		max-width: calc(100vw * 0.95);
 	}
 	li {
 		line-height: 1.7rem !important;
 	}
 	.display-4 {
-		font-size: calc(100vh * 0.04);
+		font-size: calc(100vh * 0.05);
 	}
 	.bg-blue,
 	.bg-white {
@@ -69,6 +69,9 @@
 		line-height: 2.5rem;
 		max-width: calc(100vw * 0.4);
 	}
+	li {
+		line-height: 1.5rem;
+	}
 	.card-text {
 		max-width: 50rem;
 	}
@@ -76,8 +79,9 @@
 		width: 50%;
 	}
 	.tank {
-		height: calc(100vh * 0.5);
+		height: calc(100vw * 0.3);
 		width: auto;
+		max-height: calc(100vh * 0.5);
 	}
 	.logo {
 		height: calc(100vw * 0.1);
@@ -122,14 +126,13 @@ a:hover:not(.nav-link):not(.navbar-brand) {
 }
 ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 /* Sizing, spacing */
-nav {
-	position: fixed !important;
-	top: 0 !important;
-	left: 0 !important;
-	right: 0 !important;
+main {
+	margin-top: 3rem;
 }
 article {
 	padding: 4rem 3rem;
