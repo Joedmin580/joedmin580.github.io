@@ -108,6 +108,3 @@ footer p {
 .nav-item.active > .nav-link {
 	color: crimson !important;
 }
-.nav-link:hover {
-	color: whitesmoke !important;
-}
