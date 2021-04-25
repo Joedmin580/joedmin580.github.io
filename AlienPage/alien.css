@@ -44,12 +44,12 @@
 	.animated-opacity {
 		opacity: 25%;
 		transition: ease-in-out;
-		transition-duration: 0.3s;
+		transition-duration: 0.5s;
 	}
 	.animated-opacity:hover {
 		opacity: 75%;
 		transition: ease-in-out;
-		transition-duration: 0.3s;
+		transition-duration: 0.5s;
 	}
 	.callback-code {
 		width: 0.9rem;
@@ -109,7 +109,8 @@ header {
 nav {
 	background: radial-gradient(ellipse at center, #1a1a1a 0%, #000000 100%);
 }
-.nav-link:hover {
+.nav-link:hover,
+a.navbar-brand:hover {
 	color: whitesmoke !important;
 }
 .nav-item.active .nav-link {
@@ -127,11 +128,6 @@ From Copyright (c) 2021 by Cory Hughart (https://codepen.io/cr0ybot/pen/zNyYeW)
 More in license.txt
 */
 body {
-	/* Original */
-	/* background: radial-gradient(ellipse at center, #31102f 0%, #280b29 100%); */
-	/* Green */
-	/* background: radial-gradient(ellipse at center, #020703 0%, #11311f 100%); */
-	/* Black */
 	background: radial-gradient(ellipse at center, #2b2b2b 0%, #000000 100%);
 }
 
