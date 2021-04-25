@@ -20,8 +20,11 @@
 /* Desktop & tablets */
 @media only screen and (min-width: 600px) {
 	.card-body {
-		font-size: 1.2rem;
-		line-height: 1.8rem;
+		font-size: 1.3rem;
+		line-height: 2.5rem;
+	}
+	.card-text {
+		max-width: 50rem;
 	}
 	.placeholder {
 		width: 100%;
@@ -58,12 +61,9 @@ article {
 img {
 	display: block;
 }
-.bg-white .card-body {
+.bg-blue:nth-child(2):not(img) .card-body,
+.bg-white:nth-child(2):not(img) .card-body {
 	width: 100%;
-}
-
-.card-text {
-	max-width: 40rem;
 }
 .bg-blue .card-body {
 	flex: 0 1 auto;
