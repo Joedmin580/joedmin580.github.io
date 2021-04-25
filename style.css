@@ -10,14 +10,14 @@
 	li,
 	a {
 		line-height: calc(100vh * 0.038);
-		font-size: calc(100vh * 0.025);
+		font-size: calc(100vh * 0.018);
 		max-width: calc(100vw * 0.95);
 	}
 	li {
 		line-height: 1.7rem !important;
 	}
 	.display-4 {
-		font-size: calc(100vh * 0.05);
+		font-size: calc(100vh * 0.035);
 	}
 	.bg-blue,
 	.bg-white {
