@@ -2,7 +2,23 @@
 
 /* Responsible */
 /* Phones */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+	.card-body {
+		max-width: calc(100vw * 0.95);
+	}
+	.card-text,
+	li,
+	a {
+		line-height: calc(100vh * 0.038);
+		font-size: calc(100vh * 0.021);
+		max-width: calc(100vw * 0.95);
+	}
+	li {
+		line-height: 1.7rem !important;
+	}
+	.display-4 {
+		font-size: calc(100vh * 0.04);
+	}
 	.bg-blue,
 	.bg-white {
 		flex-direction: column;
@@ -15,15 +31,43 @@
 	.bg-blue .card-body {
 		flex: 0 0 auto;
 	}
+	.logo {
+		height: calc(100vw * 0.2);
+		width: auto;
+	}
 	.tank {
-		width: 100%;
+		height: calc(100vh * 0.3);
+		width: auto;
 	}
 }
+/* Phones landscape
+@media only screen and (max-height: 500px) and (max-width: 1000px) {
+	.card-body {
+		max-width: calc(100vh * 0.8);
+	}
+	.card-text {
+		line-height: 1rem;
+		font-size: 50% !important;
+	}
+	.tank {
+		height: calc(100vh * 0.5);
+		width: auto;
+		aspect-ratio: 16/9;
+	}
+	.logo {
+		height: calc(100vh * 0.25);
+		width: calc(100vh * 0.25);
+	}
+	.bg-blue {
+		background-color: red !important;
+	}
+} */
 /* Desktop & tablets */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 	.card-body {
 		font-size: 1.3rem;
 		line-height: 2.5rem;
+		max-width: calc(100vw * 0.4);
 	}
 	.card-text {
 		max-width: 50rem;
@@ -32,13 +76,19 @@
 		width: 50%;
 	}
 	.tank {
-		width: 50%;
+		height: calc(100vh * 0.5);
+		width: auto;
+	}
+	.logo {
+		height: calc(100vw * 0.1);
+		width: auto;
 	}
 }
 
 /* Root */
 html {
 	scrollbar-width: thin !important;
+	scroll-behavior: smooth;
 }
 body {
 	font-family: "Roboto", sans-serif;
@@ -67,11 +117,20 @@ body {
 a {
 	text-decoration: none;
 }
-a:hover:not(.nav-link) {
+a:hover:not(.nav-link):not(.navbar-brand) {
 	text-decoration: underline;
+}
+ul {
+	list-style: none;
 }
 
 /* Sizing, spacing */
+nav {
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+}
 article {
 	padding: 4rem 3rem;
 	height: calc(100vh - 3rem);
@@ -101,9 +160,12 @@ img {
 }
 a {
 	color: #d53900;
+	transition: 0.5s;
 }
-a:hover {
-	color: #c53500;
+a:hover,
+a.navbar-brand:hover {
+	color: #c53500 !important;
+	transition: 0.5s;
 }
 .bg-white {
 	background-color: #ffffff;
