@@ -122,7 +122,8 @@ article {
 	display: flex;
 	align-items: center;
 }
-img {
+.logo,
+.tank {
 	display: block;
 }
 .bg-white .card-body {
