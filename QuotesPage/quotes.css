@@ -39,14 +39,14 @@
 		height: 1.23em;
 	}
 	.animated-opacity {
-		opacity: 60%;
+		opacity: 75%;
 		transition: ease-in-out;
-		transition-duration: 0.3s;
+		transition-duration: 0.5s;
 	}
 	.animated-opacity:hover {
 		opacity: 100%;
 		transition: ease-in-out;
-		transition-duration: 0.3s;
+		transition-duration: 0.5s;
 	}
 	#quote,
 	#author {
@@ -55,12 +55,8 @@
 	}
 }
 
-body {
-	font-family: "Open Sans", sans-serif;
-	color: whitesmoke;
-}
-
 main {
+	margin: 0 !important;
 	background: #ff5f6d; /* fallback for old browsers */
 	background: -webkit-linear-gradient(
 		to right,
@@ -72,6 +68,8 @@ main {
 		#ffc371,
 		#ff5f6d
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: "Open Sans", sans-serif !important;
+	color: whitesmoke;
 }
 
 footer {
