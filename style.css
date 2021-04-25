@@ -12,6 +12,9 @@
 	.placeholder {
 		display: none;
 	}
+	.bg-white .card-body {
+		flex: 0 0 auto;
+	}
 }
 
 /* Desktop & tablets */
@@ -52,17 +55,18 @@ article {
 	display: flex;
 	align-items: center;
 }
+img {
+	display: block;
+}
 .bg-white .card-body {
 	width: 100%;
 }
-.bg-blue .card-body {
-	flex: 0 0 auto;
-}
+
 .card-text {
 	max-width: 40rem;
 }
-img {
-	display: block;
+.bg-blue .card-body {
+	flex: 0 1 auto;
 }
 
 /* Colors */
