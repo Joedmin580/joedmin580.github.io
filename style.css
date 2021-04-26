@@ -212,6 +212,14 @@ article {
 	align-items: center;
 	justify-content: center;
 }
+.sound-control {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 11111;
+	cursor: pointer;
+	width: 3rem;
+}
 
 /* Colors */
 .bg-blue {
