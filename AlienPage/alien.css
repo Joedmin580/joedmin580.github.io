@@ -24,7 +24,7 @@
 	}
 }
 /* Phones Landscape & tablets*/
-@media only screen and (max-width: 1700px) and (max-height: 900px) {
+@media only screen and (max-width: 1700px) and (max-height: 1100px) {
 	.gallery {
 		justify-content: space-around;
 		flex-direction: row;
@@ -38,6 +38,9 @@
 	}
 	.gallery-group {
 		align-items: stretch;
+	}
+	.logo {
+		max-width: 70%;
 	}
 }
 /* Desktop and tablets */
