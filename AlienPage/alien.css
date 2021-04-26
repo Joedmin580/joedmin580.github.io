@@ -13,9 +13,6 @@
 	ul:not(.navbar-nav) li:not(.nav-link) {
 		margin: 0.5rem 0 -0.7rem 0;
 	}
-	.callback-code {
-		width: 0.6rem;
-	}
 	.gallery {
 		justify-content: space-between;
 		flex-direction: column;
@@ -31,9 +28,6 @@
 	ol:not(.navbar-nav) li:not(.nav-item),
 	ul:not(.navbar-nav) li:not(.nav-item) {
 		margin: 0.5rem 0 -0.7rem 0;
-	}
-	.callback-code {
-		width: 0.9rem;
 	}
 	.gallery {
 		justify-content: space-around;
@@ -52,13 +46,6 @@
 }
 
 /* Spacings */
-ul:not(.navbar-nav),
-ol:not(.navbar-nav) {
-	margin-top: -0.4rem;
-	margin-bottom: 1.5rem;
-	list-style: none;
-	line-height: 1.39rem;
-}
 h1:not(.display-1) {
 	margin-bottom: -0.5rem;
 	list-style: none;
@@ -68,7 +55,6 @@ header {
 }
 ol:not(.navbar-nav),
 ul:not(.navbar-nav),
-li:not(.nav-item),
 header {
 	padding: 0;
 }
@@ -86,8 +72,11 @@ header {
 .easteregg {
 	margin: 0 auto !important;
 }
+.callback-code {
+	width: 0.9rem;
+}
 
-/* Colors, borders, etc. */
+/* Colors */
 .article,
 .article-group,
 .article-body {
