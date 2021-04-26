@@ -5,7 +5,7 @@
 
 /* Responsible */
 /* Phones */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (max-height: 900px) {
 	header {
 		margin-bottom: -0.5rem;
 	}
@@ -23,8 +23,25 @@
 		text-align: center;
 	}
 }
+/* Phones Landscape & tablets*/
+@media only screen and (max-width: 1700px) and (max-height: 900px) {
+	.gallery {
+		justify-content: space-around;
+		flex-direction: row;
+	}
+	.gallery-item {
+		height: auto;
+		max-height: 100%;
+		width: calc(100vh * 0.4);
+		max-width: 100%;
+		text-align: center;
+	}
+	.gallery-group {
+		align-items: stretch;
+	}
+}
 /* Desktop and tablets */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) and (min-height: 900px) {
 	ol:not(.navbar-nav) li:not(.nav-item),
 	ul:not(.navbar-nav) li:not(.nav-item) {
 		margin: 0.5rem 0 -0.7rem 0;
@@ -46,13 +63,6 @@
 }
 
 /* Spacings */
-h1:not(.display-1) {
-	margin-bottom: -0.5rem;
-	list-style: none;
-}
-header {
-	margin: 2rem 0 -0.5rem 0;
-}
 ol:not(.navbar-nav),
 ul:not(.navbar-nav),
 header {
