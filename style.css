@@ -47,6 +47,9 @@
 		line-height: 2.5rem;
 		max-width: calc(100vw * 0.4);
 	}
+	.bg-blue .card-body {
+		margin-left: 15rem;
+	}
 	li {
 		line-height: 1.5rem;
 	}
@@ -144,6 +147,10 @@ article {
 	background-color: #000c66;
 	color: whitesmoke;
 }
+.bg-white {
+	background-color: #ffffff;
+	color: black;
+}
 a {
 	color: #d53900;
 	transition: 0.5s;
@@ -151,12 +158,14 @@ a {
 a:hover,
 a.navbar-brand:hover {
 	color: #c53500 !important;
-	transition: 0.5s;
 }
-.bg-white {
-	background-color: #ffffff;
-	color: black;
+a.navbar-brand:hover {
+	transition-duration: 0.5s;
 }
 nav.navbar {
 	background-color: #050a30;
+}
+.nav-item.active .nav-link {
+	color: #d53900;
+	opacity: 90%;
 }
