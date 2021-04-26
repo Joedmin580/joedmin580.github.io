@@ -25,12 +25,9 @@
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 			<section class="container-fluid">
-				<a
-					class="navbar-brand animated-opacity"
-					href="../index.html"
-					title="Home"
+				<a class="navbar-brand" href="../index.html" title="Home"
 					>Joedmin's page</a
 				>
 				<button
@@ -49,7 +46,7 @@
 					id="navbarSupportedContent"
 				>
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item animated-opacity">
+						<li class="nav-item">
 							<a
 								class="nav-link"
 								href="../TanksPage/tanks.html"
@@ -57,7 +54,7 @@
 								>WWII Tanks</a
 							>
 						</li>
-						<li class="nav-item animated-opacity">
+						<li class="nav-item">
 							<a
 								class="nav-link"
 								href="../AlienPage/alien.html"
@@ -65,7 +62,7 @@
 								>Get on Nostromo</a
 							>
 						</li>
-						<li class="nav-item animated-opacity active">
+						<li class="nav-item active">
 							<a
 								class="nav-link"
 								href="./quotes.html"
@@ -73,7 +70,7 @@
 								>Quotes</a
 							>
 						</li>
-						<li class="nav-item animated-opacity">
+						<li class="nav-item">
 							<a
 								class="nav-link"
 								href="https://github.com/Joedmin580"
@@ -86,14 +83,15 @@
 				</div>
 			</section>
 		</nav>
-
 		<!-- Body -->
-		<main class="quote">
-			<section onclick="getQuote()">
-				<p id="quote"></p>
-				<p id="author"></p>
-			</section>
-			<p class="hint">Hint: Click on the quote to get another!</p>
+		<main>
+			<article>
+				<div class="holder" onclick="getQuote()">
+					<p id="quote"></p>
+					<p id="author"></p>
+				</div>
+				<p class="hint">Hint: Click on the quote to get another!</p>
+			</article>
 			<!-- Choose language -->
 			<!-- <footer>
 				<p class="m-0 p-0">Language</p>
@@ -121,7 +119,6 @@
 				</div>
 			</footer> -->
 		</main>
-
 		<!-- Scripts -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
