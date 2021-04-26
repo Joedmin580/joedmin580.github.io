@@ -1,6 +1,6 @@
 function redirect() {
 	var linksArray = [
-		"../index.html",
+		"/",
 		"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
 		"../Secret/secret.html",
 	];
