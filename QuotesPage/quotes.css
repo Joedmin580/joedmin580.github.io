@@ -1,62 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap");
 
+/* Responsible */
 /* Phones */
-@media only screen and (max-width: 600px) {
-	main {
-		font-size: 1.1em;
+@media only screen and (max-width: 600px) and (max-height: 900px) {
+	article {
+		gap: 5rem;
 	}
-	footer p {
-		font-size: 0.8em;
-	}
-	.hint {
-		max-width: 15em;
-		font-size: 0.7em;
-		bottom: 9rem;
-	}
-	.icon {
+	/* footer p {
+		font-size: 0.8rem;
+	} 
+	 .icon {
 		height: 1.1em;
+	} */
+	#quote,
+	#author {
+		max-width: 15em;
+	}
+}
+/* Phones Landscape*/
+@media only screen and (max-width: 900px) and (max-height: 600px) {
+	article {
+		gap: 1rem;
 	}
 	#quote,
 	#author {
-		margin: 0.4em;
-		max-width: 16em;
+		max-width: 30em;
 	}
 }
-
 /* Desktop & tablets */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 900px) {
+	article {
+		gap: 10rem;
+	}
 	main {
-		font-size: 1.23em;
+		font-size: 1.2rem;
 	}
-	footer p {
+	/* footer p {
 		font-size: 0.94em;
-	}
-	.hint {
-		font-size: 0.8em;
-		bottom: 15rem;
-	}
-	.icon {
+	} 
+	 .icon {
 		height: 1.23em;
-	}
-	.animated-opacity {
-		opacity: 75%;
-		transition: ease-in-out;
-		transition-duration: 0.5s;
-	}
-	.animated-opacity:hover {
-		opacity: 100%;
-		transition: ease-in-out;
-		transition-duration: 0.5s;
-	}
+	} */
 	#quote,
 	#author {
-		margin: 0.4em;
-		max-width: 32em;
+		max-width: 30rem;
 	}
 }
 
+/* Typography */
+article {
+	text-align: center;
+}
+
+/* Spacing */
+article {
+	flex-direction: column;
+	justify-content: center;
+}
+#quote,
+#author {
+	margin: 0.4rem;
+}
+/* footer {
+	position: fixed;
+	bottom: 3rem;
+} */
+
+/* Colors */
 main {
-	margin: 0 !important;
 	background: #ff5f6d; /* fallback for old browsers */
 	background: -webkit-linear-gradient(
 		to right,
@@ -71,40 +82,14 @@ main {
 	font-family: "Open Sans", sans-serif !important;
 	color: whitesmoke;
 }
-
-footer {
-	position: fixed;
-	bottom: 3rem;
-}
-footer p {
-	opacity: 60%;
-}
-
-.hint {
-	position: fixed;
-	opacity: 45%;
-	text-align: center;
-}
-
-.quote {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	position: fixed;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-}
-
-#quote,
-#author {
-	margin: 0.4em;
-}
-
 .navbar {
-	background-color: transparent !important;
+	background: linear-gradient(to right, #ffc371, #ff5f6d);
 }
-.nav-item.active > .nav-link {
-	color: crimson !important;
+/* footer p {
+	opacity: 60%;
+} */
+
+/* Other */
+.holder {
+	cursor: pointer;
 }
