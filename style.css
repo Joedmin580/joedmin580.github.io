@@ -2,22 +2,23 @@
 
 /* Responsible */
 /* Phones */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) and (max-height: 900px) {
 	.article-body {
 		max-width: calc(100vw * 0.95);
 	}
 	.article-text,
-	li,
-	a {
-		line-height: calc(100vh * 0.038);
-		font-size: calc(100vh * 0.018);
+	ul:not(.navbar-nav),
+	li:not(.nav-item),
+	a:not(.nav-link) {
+		line-height: calc(100vh * 0.037);
+		font-size: calc(100vh * 0.026);
 		max-width: calc(100vw * 0.95);
 	}
 	li {
 		line-height: 1.7rem !important;
 	}
 	.display-4 {
-		font-size: calc(100vh * 0.035);
+		font-size: calc(100vh * 0.045);
 	}
 	.bg-blue,
 	.bg-white {
@@ -36,12 +37,14 @@
 		width: auto;
 	}
 	.tank {
-		height: calc(100vh * 0.3);
-		width: auto;
+		height: auto;
+		max-height: calc(100vh * 0.5);
+		width: calc(100vw * 0.3);
+		max-width: calc(100vw * 0.5);
 	}
 }
 /* Desktop & tablets */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) and (min-height: 900px) {
 	.article-body {
 		font-size: 1.3rem;
 		line-height: 2.5rem;
@@ -60,9 +63,9 @@
 		width: 50%;
 	}
 	.tank {
-		height: calc(100vw * 0.3);
-		width: auto;
 		max-height: calc(100vh * 0.5);
+		width: calc(100vw * 0.3);
+		max-width: calc(100vw * 0.5);
 	}
 	.logo {
 		height: calc(100vw * 0.1);
@@ -128,9 +131,6 @@ article {
 .logo,
 .tank {
 	display: block;
-}
-.bg-white .article-body {
-	flex: 0 0 auto;
 }
 .article-body {
 	padding: 1rem;
