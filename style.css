@@ -54,7 +54,11 @@
 		margin-left: 15rem;
 	}
 	li {
-		line-height: 1.5rem;
+		line-height: 2.5rem;
+	}
+	header {
+		font-size: 1.5rem;
+		font-weight: 500;
 	}
 	.article-text {
 		max-width: 50rem;
@@ -112,10 +116,11 @@ a {
 a:hover:not(.nav-link):not(.navbar-brand) {
 	text-decoration: underline;
 }
-ul {
+ol:not(.navbar-nav),
+ul:not(.navbar-nav) {
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 /* Sizing, spacing */
