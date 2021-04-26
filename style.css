@@ -12,7 +12,7 @@
 	li:not(.nav-item),
 	a:not(.nav-link):not(.navbar-brand) {
 		line-height: calc(100vh * 0.037);
-		font-size: calc(100vh * 0.02);
+		font-size: calc(100vh * 0.02) !important;
 		max-width: calc(100vw * 0.95);
 	}
 	ol:not(.navbar-nav),
@@ -24,10 +24,10 @@
 		line-height: 1.7rem !important;
 	}
 	header {
-		font-size: calc(100vh * 0.03);
+		font-size: calc(100vh * 0.03) !important;
 	}
 	.display-4 {
-		font-size: calc(100vh * 0.045);
+		font-size: calc(100vh * 0.045) !important;
 	}
 	.bg-blue,
 	.bg-white {
