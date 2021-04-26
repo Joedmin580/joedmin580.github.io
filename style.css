@@ -115,7 +115,7 @@
 	.bg-blue .article-body {
 		margin-left: 20%;
 	}
-	li {
+	li:not(.nav-item) {
 		line-height: 2.5rem;
 	}
 	header {
