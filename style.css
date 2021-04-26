@@ -3,10 +3,10 @@
 /* Responsible */
 /* Phones */
 @media only screen and (max-width: 900px) {
-	.card-body {
+	.article-body {
 		max-width: calc(100vw * 0.95);
 	}
-	.card-text,
+	.article-text,
 	li,
 	a {
 		line-height: calc(100vh * 0.038);
@@ -28,7 +28,7 @@
 	.placeholder {
 		display: none;
 	}
-	.bg-blue .card-body {
+	.bg-blue .article-body {
 		flex: 0 0 auto;
 	}
 	.logo {
@@ -42,18 +42,18 @@
 }
 /* Desktop & tablets */
 @media only screen and (min-width: 900px) {
-	.card-body {
+	.article-body {
 		font-size: 1.3rem;
 		line-height: 2.5rem;
 		max-width: calc(100vw * 0.4);
 	}
-	.bg-blue .card-body {
+	.bg-blue .article-body {
 		margin-left: 15rem;
 	}
 	li {
 		line-height: 1.5rem;
 	}
-	.card-text {
+	.article-text {
 		max-width: 50rem;
 	}
 	.placeholder {
@@ -94,7 +94,7 @@ nav {
 .display-4 {
 	display: inline;
 }
-.card-text {
+.article-text {
 	font-weight: 400;
 }
 .hint {
@@ -129,10 +129,10 @@ article {
 .tank {
 	display: block;
 }
-.bg-white .card-body {
+.bg-white .article-body {
 	flex: 0 0 auto;
 }
-.card-body {
+.article-body {
 	padding: 1rem;
 }
 .welcome {
