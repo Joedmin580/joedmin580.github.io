@@ -14,3 +14,19 @@ function playSound() {
 	console.log(`Playing ${sound}`);
 	audio.play();
 }
+
+var playing = true;
+var sound = document.getElementById("music");
+function playPause() {
+	var controler = document.getElementById("controler");
+	if (playing) {
+		controler.setAttribute("src", "/Images/Sound/off.svg");
+		playing = false;
+		sound.pause();
+	} else if (!playing) {
+		controler.setAttribute("src", "/Images/Sound/on.svg");
+		playing = true;
+		sound.play();
+	}
+	console.log(`Playing music: ${playing}`);
+}
