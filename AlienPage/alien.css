@@ -28,9 +28,6 @@
 }
 /* Desktop and tablets */
 @media only screen and (min-width: 600px) {
-	header {
-		margin-bottom: 10rem;
-	}
 	ol:not(.navbar-nav) li:not(.nav-item),
 	ul:not(.navbar-nav) li:not(.nav-item) {
 		margin: 0.5rem 0 -0.7rem 0;
@@ -67,7 +64,7 @@ h1:not(.display-1) {
 	list-style: none;
 }
 header {
-	margin: 1rem 0 -0.5rem 0;
+	margin: 2rem 0 -0.5rem 0;
 }
 ol:not(.navbar-nav),
 ul:not(.navbar-nav),
@@ -118,4 +115,8 @@ nav,
 .bg-black .hint,
 .bg-black .display-1 {
 	color: aliceblue;
+}
+a:hover,
+a.navbar-brand:hover {
+	color: aliceblue !important;
 }
