@@ -156,12 +156,6 @@ nav {
 .display-4 {
 	font-weight: 500;
 }
-.display-1 {
-	display: block;
-}
-.display-4 {
-	display: inline;
-}
 .article-text {
 	font-weight: 400;
 }
