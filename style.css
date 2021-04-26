@@ -2,20 +2,29 @@
 
 /* Responsible */
 /* Phones */
-@media only screen and (max-width: 900px) and (max-height: 900px) {
+@media only screen and (max-width: 600px) and (max-height: 900px) {
 	.article-body {
 		max-width: calc(100vw * 0.95);
 	}
+	p,
 	.article-text,
 	ul:not(.navbar-nav),
 	li:not(.nav-item),
-	a:not(.nav-link) {
+	a:not(.nav-link):not(.navbar-brand) {
 		line-height: calc(100vh * 0.037);
-		font-size: calc(100vh * 0.026);
+		font-size: calc(100vh * 0.02);
 		max-width: calc(100vw * 0.95);
+	}
+	ol:not(.navbar-nav),
+	ul:not(.navbar-nav) {
+		margin: -10rem !important;
+		padding: 0 !important;
 	}
 	li {
 		line-height: 1.7rem !important;
+	}
+	header {
+		font-size: calc(100vh * 0.03);
 	}
 	.display-4 {
 		font-size: calc(100vh * 0.045);
@@ -24,7 +33,6 @@
 	.bg-white {
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
 	}
 	.placeholder {
 		display: none;
@@ -43,22 +51,75 @@
 		max-width: calc(100vw * 0.5);
 	}
 }
+/* Phones Landscape*/
+@media only screen and (max-width: 900px) and (max-height: 600px) {
+	.article-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	.article-row > * {
+		width: 50%;
+	}
+	.article-body {
+		max-width: calc(100vw * 0.7);
+	}
+	p,
+	.article-text,
+	ul:not(.navbar-nav),
+	li:not(.nav-item),
+	a:not(.nav-link):not(.navbar-brand) {
+		line-height: calc(100vh * 0.04);
+		font-size: calc(100vh * 0.037);
+		max-width: calc(100vw * 0.95);
+	}
+	ol:not(.navbar-nav),
+	ul:not(.navbar-nav) {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	header {
+		font-size: calc(100vh * 0.043);
+	}
+	.display-4 {
+		font-size: calc(100vh * 0.06);
+	}
+	.bg-blue,
+	.bg-white {
+		flex-direction: column;
+		justify-content: center;
+		flex: 0 0 auto;
+	}
+	.placeholder {
+		display: none;
+	}
+	.logo {
+		height: calc(100vw * 0.2);
+		width: auto;
+	}
+	.tank {
+		height: auto;
+		max-height: calc(100vh * 0.5);
+		width: calc(100vw * 0.3);
+		max-width: calc(100vw * 0.5);
+	}
+}
 /* Desktop & tablets */
-@media only screen and (min-width: 900px) and (min-height: 900px) {
+@media only screen and (min-width: 600px) and (min-height: 900px) {
 	.article-body {
 		font-size: 1.3rem;
 		line-height: 2.5rem;
 		max-width: calc(100vw * 0.4);
 	}
 	.bg-blue .article-body {
-		margin-left: 15rem;
+		margin-left: 20%;
 	}
 	li {
 		line-height: 2.5rem;
 	}
 	header {
 		font-size: 1.5rem;
-		font-weight: 500;
 	}
 	.article-text {
 		max-width: 50rem;
@@ -118,12 +179,22 @@ a:hover:not(.nav-link):not(.navbar-brand) {
 }
 ol:not(.navbar-nav),
 ul:not(.navbar-nav) {
-	list-style: none;
+	list-style: circle;
 	margin: 0 !important;
 	padding: 0 !important;
 }
+ol:not(.navbar-nav) li,
+ul:not(.navbar-nav) li {
+	margin-left: 1rem !important;
+}
+header {
+	font-weight: 500;
+}
 
 /* Sizing, spacing */
+p {
+	margin: 0;
+}
 main {
 	margin-top: 3rem;
 }
