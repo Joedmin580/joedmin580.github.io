@@ -132,6 +132,7 @@
 		max-height: calc(100vh * 0.5);
 		width: calc(100vw * 0.3);
 		max-width: calc(100vw * 0.5);
+		margin: 0.5rem;
 	}
 	.logo {
 		height: calc(100vw * 0.1);
