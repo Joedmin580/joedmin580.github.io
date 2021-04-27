@@ -2,7 +2,7 @@
 
 /* Responsible */
 /* Phones */
-@media only screen and (max-width: 800px) and (max-height: 1600px) {
+@media only screen and (max-width: 800px) and (orientation: portrait) {
 	.article-body {
 		max-width: calc(100vw * 0.95);
 	}
@@ -11,8 +11,8 @@
 	ul:not(.navbar-nav),
 	li:not(.nav-item),
 	a:not(.nav-link):not(.navbar-brand) {
-		line-height: calc(100vh * 0.037);
-		font-size: calc(100vh * 0.02) !important;
+		line-height: calc(100vh * 0.03) !important;
+		font-size: calc(100vh * 0.02);
 		max-width: calc(100vw * 0.95);
 	}
 	ol:not(.navbar-nav),
@@ -41,18 +41,16 @@
 		flex: 0 0 auto;
 	}
 	.logo {
-		height: calc(100vw * 0.2);
+		height: calc(100vw * 0.35);
 		width: auto;
 	}
 	.tank {
-		height: auto;
-		max-height: calc(100vh * 0.5);
-		width: calc(100vw * 0.3);
-		max-width: calc(100vw * 0.5);
+		height: calc(100vw * 0.5);
+		width: auto;
 	}
 }
-/* Phones Landscape & tablets*/
-@media only screen and (max-width: 1700px) and (max-height: 1100px) {
+/* Phones Landscape */
+@media only screen and (max-width: 800px) and (orientation: landscape) {
 	.article-row {
 		display: flex;
 		flex-direction: row;
@@ -70,8 +68,8 @@
 	ul:not(.navbar-nav),
 	li:not(.nav-item),
 	a:not(.nav-link):not(.navbar-brand) {
-		line-height: calc(100vh * 0.04);
-		font-size: calc(100vh * 0.037);
+		line-height: calc(100vh * 0.045);
+		font-size: calc(100vh * 0.04);
 		max-width: calc(100vw * 0.95);
 	}
 	ol:not(.navbar-nav),
@@ -95,7 +93,7 @@
 		display: none;
 	}
 	.logo {
-		height: calc(100vw * 0.2);
+		height: calc(100vw * 0.15);
 		width: auto;
 	}
 	.tank {
@@ -104,6 +102,9 @@
 		width: calc(100vw * 0.3);
 		max-width: calc(100vw * 0.5);
 	}
+}
+/* Tablets*/
+@media only screen and (max-width: 1100px) and (max-height: 1100px) {
 }
 /* Desktop */
 @media only screen and (min-width: 900px) and (min-height: 900px) {

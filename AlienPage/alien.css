@@ -1,6 +1,6 @@
 /* Responsible */
 /* Phones */
-@media only screen and (max-width: 800px) and (max-height: 1600px) {
+@media only screen and (max-width: 800px) and (orientation: portrait) {
 	header {
 		margin-bottom: -0.5rem;
 	}
@@ -21,7 +21,7 @@
 	}
 }
 /* Phones Landscape */
-@media only screen and (max-width: 1700px) and (max-height: 1100px) {
+@media only screen and (max-width: 800px) and (orientation: landscape) {
 	.gallery {
 		justify-content: space-around;
 		flex-direction: column;
@@ -54,7 +54,7 @@
 		align-items: center;
 	}
 }
-/* Desktop and tablets */
+/* Desktop */
 @media only screen and (min-width: 900px) and (min-height: 900px) {
 	ol:not(.navbar-nav) li:not(.nav-item),
 	ul:not(.navbar-nav) li:not(.nav-item) {
