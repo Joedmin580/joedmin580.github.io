@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="/style.css" />
 		<link rel="icon" href="/media/icons/quote.svg" />
 	</head>
-	<body>
+	<body class="bg-orange-gradient" onload="getQuote()">
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 			<section class="container-fluid">
@@ -80,12 +80,12 @@
 				</div>
 			</section>
 		</nav>
-		<!-- Body -->
+		<!-- Quote -->
 		<main>
-			<article>
-				<div class="holder" onclick="getQuote()">
-					<p id="quote"></p>
-					<p id="author"></p>
+			<article class="flex-coll center-screen text-center">
+				<div class="clickable" onclick="getQuote()">
+					<p class="quote" id="quote"></p>
+					<p class="author" id="author"></p>
 				</div>
 				<p class="hint">Hint: Click on the quote to get another!</p>
 			</article>
@@ -122,6 +122,6 @@
 			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
 			crossorigin="anonymous"
 		></script>
-		<script src="./quotes.js"></script>
+		<script src="/script.js"></script>
 	</body>
 </html>
