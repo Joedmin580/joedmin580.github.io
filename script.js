@@ -2,7 +2,7 @@ function redirect() {
 	var linksArray = [
 		"/",
 		"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-		"../Secret/secret.html",
+		"/pages/secret.html",
 	];
 	var randomNumber = Math.floor(Math.random() * linksArray.length);
 	var link = linksArray[randomNumber];
@@ -32,12 +32,12 @@ document.onload = getQuote();
 
 function playSound() {
 	var soundsArray = [
-		"/Sounds/alien_sound_1.mp3",
-		"/Sounds/alien_sound_2.mp3",
-		"/Sounds/alien_sound_3.mp3",
-		"/Sounds/alien_sound_4.mp3",
-		"/Sounds/alien_sound_5.mp3",
-		"/Sounds/alien_sound_6.mp3",
+		"/media/sounds/alien-SFX/sound_1.mp3",
+		"/media/sounds/alien-SFX/sound_2.mp3",
+		"/media/sounds/alien-SFX/sound_3.mp3",
+		"/media/sounds/alien-SFX/sound_4.mp3",
+		"/media/sounds/alien-SFX/sound_5.mp3",
+		"/media/sounds/alien-SFX/sound_6.mp3",
 	];
 	var randomNumber = Math.floor(Math.random() * soundsArray.length);
 	var sound = soundsArray[randomNumber];
