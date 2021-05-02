@@ -28,8 +28,6 @@ function getQuote() {
 		});
 }
 
-document.onload = getQuote();
-
 function playSound() {
 	var soundsArray = [
 		"/media/sounds/alien-SFX/sound_1.mp3",
