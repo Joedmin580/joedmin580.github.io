@@ -314,6 +314,13 @@
 	h4 {
 		font-size: calc(100vh * 0.025);
 	}
+	a {
+		transition: ease-in-out 0.2s;
+	}
+	a:hover {
+		color: #c53500 !important;
+		transition: ease-in-out 0.2s;
+	}
 }
 
 /* Root */
@@ -498,11 +505,6 @@ a.navbar-brand {
 }
 a {
 	color: #d53900;
-	transition: ease-in-out 0.2s;
-}
-a:hover {
-	color: #c53500 !important;
-	transition: ease-in-out 0.2s;
 }
 .nav-item.active .nav-link {
 	color: #d53900 !important;
