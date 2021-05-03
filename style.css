@@ -330,9 +330,6 @@
 html {
 	scrollbar-width: thin !important;
 	scroll-behavior: smooth;
-	--lime: #a2e104;
-	--navy: #000c66;
-	--dark-blue: #050a30;
 }
 body {
 	font-family: "Roboto", sans-serif;
@@ -343,19 +340,6 @@ nav {
 }
 
 /* Typography */
-.display-1,
-.display-4 {
-	font-weight: 500;
-}
-.article-text {
-	font-weight: 400;
-}
-.hint {
-	font-weight: 500;
-	font-style: italic;
-	opacity: 60%;
-	display: block;
-}
 a {
 	text-decoration: none;
 }
@@ -372,8 +356,18 @@ ol:not(.navbar-nav) li::before,
 ul:not(.navbar-nav) li::before {
 	content: "- ";
 }
-header {
+.display-1,
+.display-4 {
 	font-weight: 500;
+}
+.article-text {
+	font-weight: 400;
+}
+.hint {
+	font-weight: 500;
+	font-style: italic;
+	opacity: 60%;
+	display: block;
 }
 .highlight-lime {
 	font-weight: 500;
@@ -400,18 +394,15 @@ h4 {
 	margin-bottom: 0;
 	margin-top: 1rem;
 }
-.img-fullscreen {
-	display: block;
-}
-.article-body {
-	padding: 1.2rem;
-}
 .welcome {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+.article-body {
+	padding: 1.2rem;
 }
 .sound-control {
 	position: fixed;
@@ -434,16 +425,19 @@ h4 {
 	display: flex;
 	justify-content: center;
 }
-.inline-img {
+.img-inline {
 	width: 0.9rem;
 }
-.flex-coll {
-	display: flex;
-	flex-direction: column;
+.img-fullscreen {
+	display: block;
 }
 .gallery,
 .gallery-3 {
 	display: flex;
+}
+.flex-coll {
+	display: flex;
+	flex-direction: column;
 }
 .no-mp {
 	margin: 0;
@@ -451,16 +445,26 @@ h4 {
 }
 
 /* Colors */
-.color-lime,
+a {
+	color: #d53900;
+}
+a.nav-link,
+a.navbar-brand {
+	color: aliceblue !important;
+}
+.nav-item.active .nav-link {
+	color: #d53900 !important;
+	opacity: 90%;
+}
 .highlight-lime {
-	color: var(--lime);
+	color: #a2e104;
 }
 .bg-blue {
-	background-color: var(--navy);
+	background-color: #000c66;
 	color: whitesmoke;
 }
 .bg-blue-dark {
-	background-color: var(--dark-blue);
+	background-color: #050a30;
 }
 .bg-white {
 	background-color: #ffffff;
@@ -499,21 +503,10 @@ h4 {
 	font-family: "Open Sans", sans-serif !important;
 	color: whitesmoke;
 }
-a.nav-link,
-a.navbar-brand {
-	color: aliceblue !important;
-}
 .btn-hidden {
 	background-color: transparent;
 	border: none;
 	color: inherit;
-}
-a {
-	color: #d53900;
-}
-.nav-item.active .nav-link {
-	color: #d53900 !important;
-	opacity: 90%;
 }
 
 /* Other */
