@@ -4,7 +4,17 @@
 /* Responsible */
 /* Watches etc. */
 @media only screen and (max-width: 400px) {
-	/* Code here */
+	.article-text,
+	li:not(.nav-item):not(.navbar-brand) {
+		font-size: 0.7rem;
+		line-height: 0.7rem;
+	}
+	.img-inline {
+		height: 0.7rem;
+	}
+	.gallery-3 {
+		flex-direction: row !important;
+	}
 }
 /* Phones */
 @media only screen and (max-width: 900px) and (orientation: portrait) {
@@ -219,7 +229,9 @@
 	a {
 		transition: ease-in-out 0.2s;
 	}
-	a:hover {
+	a:hover,
+	a.nav-link:hover,
+	a.navbar-brand:hover {
 		color: #c53500 !important;
 		transition: ease-in-out 0.2s;
 	}
