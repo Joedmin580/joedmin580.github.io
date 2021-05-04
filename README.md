@@ -1,6 +1,6 @@
 # Joedmin's page
 ## About
-This is my personal website which I use for testing and learning writing static websites using HTML, CSS, JS and Bootstrap. 
+My personal website used for testing and learning writing static websites using HTML, CSS, JS and Bootstrap. 
 
 ## Content
 * [Home page / personal "blog"](https://joedmin580.github.io/)
@@ -10,3 +10,8 @@ This is my personal website which I use for testing and learning writing static 
 * [Redirect page](https://joedmin580.github.io/pages/redirect.html) which is accessible via QR code on my laptop, leads to random link from array
 * Secret page accessible through a chance on [redirect page](https://joedmin580.github.io/pages/redirect.html)
 * Custom Error 404 page 
+
+## Third-party libraries
+* [AOS](https://github.com/michalsnik/aos)
+* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+* [Quotable](https://github.com/lukePeavey/quotable)
