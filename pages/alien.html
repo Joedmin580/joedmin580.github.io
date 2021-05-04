@@ -19,6 +19,7 @@
 			integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="/style.css" />
 		<link rel="icon" href="/media/icons/rocket.svg" />
 	</head>
@@ -87,7 +88,12 @@
 				<p class="hint">Scroll down for more</p>
 			</article>
 			<article class="bg-white">
-				<div class="article-body">
+				<div
+					class="article-body"
+					data-aos="fade-up"
+					data-aos-delay="250"
+					data-aos-duration="500"
+				>
 					<h1 class="display-4">About us</h1>
 					<p class="article-text">
 						Weyland-Yutani Corporation as you know it now was
@@ -109,7 +115,12 @@
 			</article>
 			<article class="bg-black">
 				<div class="placeholder"></div>
-				<div class="article-body">
+				<div
+					class="article-body"
+					data-aos="fade-up"
+					data-aos-delay="250"
+					data-aos-duration="500"
+				>
 					<h1 class="display-4">Nostromo</h1>
 					<p class="article-text">
 						Nostromo is our newest commercial towing vehicle is the
@@ -136,7 +147,12 @@
 				</div>
 			</article>
 			<article class="bg-white">
-				<div class="article-body">
+				<div
+					class="article-body"
+					data-aos="fade-up"
+					data-aos-delay="250"
+					data-aos-duration="500"
+				>
 					<h1 class="display-4">Get on board!</h1>
 					<p class="article-text">
 						Would you like to tak a part on space colonization? You
@@ -188,7 +204,12 @@
 			</article>
 			<article class="bg-black">
 				<div class="placeholder"></div>
-				<div class="article-body">
+				<div
+					class="article-body"
+					data-aos="fade-up"
+					data-aos-delay="250"
+					data-aos-duration="500"
+				>
 					<h1 class="display-4">What will you get?</h1>
 					<p class="article-text">
 						You will travel through
@@ -210,7 +231,12 @@
 				</div>
 			</article>
 			<article class="bg-white">
-				<div class="article-body">
+				<div
+					class="article-body"
+					data-aos="fade-up"
+					data-aos-delay="250"
+					data-aos-duration="500"
+				>
 					<h1 class="display-4">Contact us</h1>
 					<p class="article-text">
 						Are you interested?
@@ -231,8 +257,20 @@
 			</article>
 			<!-- Gallery -->
 			<article class="bg-black flex-coll center-screen">
-				<h1 class="display-4">Gallery</h1>
-				<div class="gallery-3">
+				<h1
+					class="display-4"
+					data-aos="fade-up"
+					data-aos-delay="250"
+					data-aos-duration="500"
+				>
+					Gallery
+				</h1>
+				<div
+					class="gallery-3"
+					data-aos="fade-up"
+					data-aos-delay="250"
+					data-aos-duration="500"
+				>
 					<div class="gallery-item">
 						<img
 							src="/media/images/compressed/Dallan.jpg"
@@ -263,7 +301,12 @@
 				</div>
 			</article>
 			<article class="bg-white center-screen center-text">
-				<div class="article-body">
+				<div
+					class="article-body"
+					data-aos="fade-up"
+					data-aos-delay="250"
+					data-aos-duration="500"
+				>
 					<p class="article-text">
 						<em>
 							This is commercial towing vehicle Nostromo out of
@@ -279,6 +322,9 @@
 					src="/media/images/weiland_yutany.svg"
 					class="img-fullscreen"
 					loading="lazy"
+					data-aos="fade-up"
+					data-aos-delay="150"
+					data-aos-duration="500"
 				/>
 			</article>
 		</main>
@@ -289,5 +335,9 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="/script.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
