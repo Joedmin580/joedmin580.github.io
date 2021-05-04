@@ -54,14 +54,20 @@
 		gap: 1rem;
 		justify-content: space-around;
 	}
-	.gallery-3 {
-		flex-direction: column;
-		gap: 1rem;
-	}
 	.gallery-item {
 		height: auto;
 		width: auto;
 		max-width: calc(100vw * 0.4);
+		text-align: center;
+	}
+	.gallery-3 {
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.gallery-3 .gallery-item {
+		height: auto;
+		width: auto;
+		max-width: calc(100vw * 0.28);
 		text-align: center;
 	}
 	.img-half {
