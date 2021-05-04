@@ -2,20 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap");
 
 /* Responsible */
-/* Watches etc. */
-@media only screen and (max-width: 400px) {
-	.article-text,
-	li:not(.nav-item):not(.navbar-brand) {
-		font-size: 0.7rem;
-		line-height: 0.7rem;
-	}
-	.img-inline {
-		height: 0.7rem;
-	}
-	.gallery-3 {
-		flex-direction: row !important;
-	}
-}
 /* Phones */
 @media only screen and (max-width: 900px) and (orientation: portrait) {
 	article {
