@@ -258,6 +258,9 @@
 		height: calc(100vw * 0.1);
 		width: auto;
 	}
+	.content-end-line {
+		justify-content: end;
+	}
 }
 
 /* Root */
@@ -382,8 +385,8 @@ h4 {
 	margin: 0;
 	padding: 0;
 }
-.placeholder {
-	width: 70%;
+:is(.bg-blue, .bg-black) .placeholder {
+	width: 65%;
 }
 
 /* Colors */
