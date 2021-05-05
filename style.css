@@ -59,10 +59,6 @@
 		width: auto;
 		max-height: calc(100vw * 0.3);
 	}
-	.img-fullscreen {
-		height: calc(100vw * 0.35);
-		width: auto;
-	}
 	.placeholder {
 		display: none;
 	}
