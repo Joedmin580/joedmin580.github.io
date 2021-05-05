@@ -4,9 +4,6 @@
 /* Responsible */
 /* Phones */
 @media only screen and (max-width: 900px) and (orientation: portrait) {
-	article {
-		padding: 2rem !important;
-	}
 	:is(ol, ul):not(.navbar-nav) {
 		margin: -10rem;
 		padding: 0;
@@ -222,9 +219,6 @@
 }
 /* Desktop */
 @media only screen and (min-width: 1400px) {
-	article {
-		height: calc(100vh - 3rem);
-	}
 	.display-1 {
 		margin-bottom: 0;
 	}
@@ -268,15 +262,14 @@
 
 /* Root */
 html {
-	scrollbar-width: thin !important;
+	scrollbar-width: thin;
 	scroll-behavior: smooth;
 }
 body {
 	font-family: "Roboto", sans-serif;
 }
 nav {
-	font-family: "Roboto", sans-serif !important;
-	font-weight: 500 !important;
+	font-weight: 500;
 }
 
 /* Typography */
@@ -288,8 +281,8 @@ a:hover:not(.nav-link, .navbar-brand) {
 }
 :is(ul, ol):not(.navbar-nav) {
 	list-style: none;
-	margin: 0 !important;
-	padding: 0 !important;
+	margin: 0;
+	padding: 0;
 }
 :is(ul, ol):not(.navbar-nav) li::before {
 	content: "- ";
@@ -313,6 +306,9 @@ a:hover:not(.nav-link, .navbar-brand) {
 .quote,
 .author {
 	font-size: 1.2rem;
+}
+.open-sans {
+	font-family: "Open Sans", sans-serif;
 }
 
 /* Sizing, spacing */
@@ -357,7 +353,7 @@ h4 {
 	text-align: center;
 }
 .center-self {
-	margin: 0 auto !important;
+	margin: 0 auto;
 }
 .center-screen {
 	display: flex;
@@ -453,7 +449,7 @@ a.nav-link:hover {
 		#ffc371,
 		#ff5f6d
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	font-family: "Open Sans", sans-serif !important;
+
 	color: whitesmoke;
 }
 .btn-hidden {
