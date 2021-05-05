@@ -216,6 +216,9 @@
 		max-height: calc(100vh * 0.5);
 		text-align: center;
 	}
+	.placeholder {
+		width: 50%;
+	}
 }
 /* Desktop */
 @media only screen and (min-width: 1400px) {
@@ -253,10 +256,6 @@
 		width: calc(100vw * 0.25);
 		max-width: 100%;
 		text-align: center;
-	}
-	.img-fullscreen {
-		height: calc(100vw * 0.1);
-		width: auto;
 	}
 	.content-end-line {
 		justify-content: end;
@@ -371,7 +370,8 @@ h4 {
 	margin: 0.5rem;
 }
 .img-fullscreen {
-	display: block;
+	height: calc(100vw * 0.2);
+	width: auto;
 }
 .gallery,
 .gallery-3 {
