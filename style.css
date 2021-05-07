@@ -326,6 +326,19 @@ h4 {
 	margin-bottom: 0;
 	margin-top: 1rem;
 }
+blockquote {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	max-width: 40rem;
+}
+blockquote p {
+	padding-left: 50%;
+}
+blockquote p::before {
+	content: "- ";
+}
+
 .welcome {
 	text-align: center;
 	display: flex;
