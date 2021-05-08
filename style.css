@@ -352,9 +352,11 @@ blockquote {
 	padding: 0;
 	text-align: center;
 	max-width: 40rem;
+	font-style: italic;
 }
 blockquote p {
 	padding-left: 50%;
+	font-style: normal;
 }
 blockquote p::before {
 	content: "- ";
