@@ -65,6 +65,9 @@
 		width: auto;
 		max-height: calc(100vw * 0.3);
 	}
+	.quote {
+		line-height: 1.3rem;
+	}
 	.placeholder {
 		display: none;
 	}
@@ -329,6 +332,9 @@ a:hover:not(.nav-link, .navbar-brand) {
 .highlight-lime {
 	font-weight: 500;
 }
+.quote {
+	margin-bottom: 1rem;
+}
 .quote,
 .author {
 	font-size: 1.2rem;
@@ -368,7 +374,6 @@ blockquote p {
 blockquote p::before {
 	content: "- ";
 }
-
 .welcome {
 	text-align: center;
 	display: flex;
