@@ -280,6 +280,13 @@
 }
 
 /* Root */
+:root {
+	--navy: #000c66;
+	--dark-blue: #050a30;
+	--white-smoke: #f5f5f5;
+	--lime: #a2e104;
+	--black: #0c0c0c;
+}
 html {
 	scrollbar-width: thin;
 	scroll-behavior: smooth;
@@ -421,7 +428,7 @@ a {
 	color: #d53900;
 }
 a.nav-link {
-	color: aliceblue !important;
+	color: #f0f8ff !important;
 	transition: ease-in-out 0.2s;
 	opacity: 70%;
 }
@@ -436,22 +443,22 @@ a.nav-link:hover {
 	opacity: 90%;
 }
 .highlight-lime {
-	color: #a2e104;
+	color: var(--lime);
 }
 .bg-blue {
-	background-color: #000c66;
-	color: whitesmoke;
+	background-color: var(--navy);
+	color: var(--white-smoke);
 }
 .bg-blue-dark {
-	background-color: #050a30;
+	background-color: var(--dark-blue);
 }
 .bg-white {
 	background-color: #ffffff;
-	color: black;
+	color: #000000;
 }
 .bg-black {
-	background-color: #0c0c0c;
-	color: whitesmoke;
+	background-color: var(--black);
+	color: var(--white-smoke);
 }
 .bg-tile {
 	background-color: #f8f8f8;
@@ -479,8 +486,7 @@ a.nav-link:hover {
 		#ffc371,
 		#ff5f6d
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-	color: whitesmoke;
+	color: var(--white-smoke);
 }
 .btn-hidden {
 	background-color: transparent;
