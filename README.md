@@ -15,3 +15,4 @@ My personal website used for testing and learning writing static websites using 
 * [AOS](https://github.com/michalsnik/aos)
 * [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 * [Quotable](https://github.com/lukePeavey/quotable)
+* [Normalize.css](https://github.com/necolas/normalize.css/)
