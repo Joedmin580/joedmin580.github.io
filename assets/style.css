@@ -27,6 +27,9 @@
 	li:not(.nav-item):not(.navbar-brand) {
 		line-height: 1.4rem;
 	}
+	.display-1 {
+		font-size: calc(1.625rem + 4.5vw);
+	}
 	.display-4 {
 		text-align: center;
 	}
@@ -60,6 +63,7 @@
 	}
 	.img-half {
 		max-width: calc(100vw * 0.7);
+		margin-top: 0.5rem;
 	}
 	.img-half.square {
 		width: auto;
@@ -94,11 +98,9 @@
 	}
 	.display-1 {
 		font-size: 2.9rem;
-		margin-bottom: 0;
 	}
 	.display-4 {
 		font-size: 2rem;
-		margin-bottom: 0;
 	}
 	.article-body {
 		padding: 1rem;
@@ -159,7 +161,11 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+	.display-1 {
+		font-size: calc(1.625rem + 4.5vw);
+	}
 	.display-4 {
+		font-size: calc(1.475rem + 2.7vw);
 		text-align: center;
 	}
 	.article-text,
@@ -198,7 +204,11 @@
 		flex-direction: row;
 		justify-content: center;
 	}
+	.display-1 {
+		font-size: 5rem;
+	}
 	.display-4 {
+		font-size: 3.5rem;
 		text-align: center;
 	}
 	.article-text {
@@ -238,10 +248,11 @@
 /* Desktop */
 @media only screen and (min-width: 1400px) {
 	.display-1 {
-		margin-bottom: 0;
+		font-size: 5rem;
 	}
 	.display-4 {
 		text-align: center;
+		font-size: 3.5rem;
 	}
 	.article-body {
 		line-height: 2.5rem;
@@ -310,8 +321,6 @@ a:hover:not(.nav-link, .navbar-brand) {
 }
 :is(ul, ol):not(.navbar-nav) {
 	list-style: none;
-	margin: 0;
-	padding: 0;
 }
 :is(ul, ol):not(.navbar-nav) li::before {
 	content: "- ";
@@ -332,9 +341,6 @@ a:hover:not(.nav-link, .navbar-brand) {
 .highlight-lime {
 	font-weight: 500;
 }
-.quote {
-	margin-bottom: 1rem;
-}
 .quote,
 .author {
 	font-size: 1.2rem;
@@ -344,9 +350,6 @@ a:hover:not(.nav-link, .navbar-brand) {
 }
 
 /* Sizing, spacing */
-p {
-	margin: 0;
-}
 main {
 	margin-top: 3rem;
 }
@@ -356,9 +359,20 @@ article {
 	display: flex;
 	align-items: center;
 }
+:is(h1, h2, h3, h4, h5, h6) {
+	margin: 0;
+}
+p {
+	margin: 0;
+}
 h4 {
 	margin-bottom: 0;
 	margin-top: 1rem;
+}
+:is(ul, ol):not(.navbar-nav) {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 blockquote {
 	margin: 0;
@@ -380,6 +394,12 @@ blockquote p::before {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+.display-1 {
+	margin: 0;
+}
+.display-4 {
+	margin-bottom: 0.5rem;
 }
 .article-body {
 	padding: 1.2rem;
@@ -423,6 +443,9 @@ blockquote p::before {
 .no-mp {
 	margin: 0;
 	padding: 0;
+}
+.quote {
+	margin-bottom: 1rem;
 }
 :is(.bg-blue, .bg-black) .placeholder {
 	width: 65%;
