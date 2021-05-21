@@ -10,12 +10,12 @@
 			content="W0iylkYh0vvs5uu1eH5uva1WT0e1RfL-BIaej69MMrA"
 		/>
 		<title>Joedmin's page</title>
-		<link
+		<!-- <link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
 			crossorigin="anonymous"
-		/>
+		/> -->
 		<link rel="stylesheet" href="/assets/normalize.css" />
 		<link rel="stylesheet" href="/assets/style.css" />
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -23,67 +23,49 @@
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-blue-dark fixed-top">
-			<section class="container-fluid">
-				<a class="navbar-brand" href="/" title="Home">Joedmin's page</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div
-					class="collapse navbar-collapse"
-					id="navbarSupportedContent"
-				>
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="/pages/tanks.html"
-								title="Page about WWII tanks"
-								>WWII Tanks</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="/pages/alien.html"
-								title="Golden opportunity"
-								>Get on Nostromo</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="/pages/quotes.html"
-								title="Quotes of famous people"
-								>Quotes</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="https://github.com/Joedmin580"
-								target="_blank"
-								title="My GitHub profile"
-								rel="noopener noreferrer"
-								>GitHub</a
-							>
-						</li>
-					</ul>
-				</div>
-			</section>
+		<nav class="navbar">
+			<a class="nav-link-home" href="/" title="Home">Joedmin's page</a>
+			<ul class="nav-links">
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="/pages/tanks.html"
+						title="Page about WWII tanks"
+						>WWII Tanks</a
+					>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="/pages/alien.html"
+						title="Golden opportunity"
+						>Get on Nostromo</a
+					>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="/pages/quotes.html"
+						title="Quotes of famous people"
+						>Quotes</a
+					>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="https://github.com/Joedmin580"
+						target="_blank"
+						title="My GitHub profile"
+						rel="noopener noreferrer"
+						>GitHub</a
+					>
+				</li>
+			</ul>
 		</nav>
 		<!-- Articles -->
 		<main>
 			<article class="bg-blue welcome">
-				<h1 class="display-1">Welcome!</h1>
+				<h1 class="header-main">Welcome!</h1>
 				<p class="hint">Scroll down for more</p>
 			</article>
 			<article class="bg-white">
@@ -92,7 +74,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">About me</h1>
+					<h1 class="article-header">About me</h1>
 					<p class="article-text">
 						I'm a 17 years old CS degree student which wanna be a
 						back-end developer. I'm learning Python, C#
@@ -123,7 +105,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">About this page</h1>
+					<h1 class="article-header">About this page</h1>
 					<p class="article-text">
 						Little fun project used to spend free time and to get
 						better on making websites. Also I wanna have a hosted
@@ -138,7 +120,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">My mini-projects</h1>
+					<h1 class="article-header">My mini-projects</h1>
 					<p class="article-text">
 						My 1st mini-project when I was learning python is the
 						<a
@@ -168,7 +150,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">My tools</h1>
+					<h1 class="article-header">My tools</h1>
 					<p class="article-text">
 						I use Git, GitHub, VS Code and Visual Studio 2019. My VS
 						Code has quite a lot of extensions the most useful for
@@ -192,7 +174,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">Do you wanna code?</h1>
+					<h1 class="article-header">Do you wanna code?</h1>
 					<p class="article-text">
 						Do you want to learn to code or at least try it? I've
 						learned the basics from youtube tutorials from the
