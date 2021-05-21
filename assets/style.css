@@ -27,10 +27,10 @@
 	li:not(.nav-item):not(.navbar-brand) {
 		line-height: 1.4rem;
 	}
-	.display-1 {
+	.header-main {
 		font-size: calc(1.625rem + 4.5vw);
 	}
-	.display-4 {
+	.article-header {
 		text-align: center;
 	}
 	.article-text {
@@ -96,10 +96,10 @@
 	.bg-white {
 		flex-direction: row;
 	}
-	.display-1 {
+	.header-main {
 		font-size: 2.9rem;
 	}
-	.display-4 {
+	.article-header {
 		font-size: 2rem;
 	}
 	.article-body {
@@ -161,10 +161,10 @@
 		flex-direction: column;
 		justify-content: center;
 	}
-	.display-1 {
+	.header-main {
 		font-size: calc(1.625rem + 4.5vw);
 	}
-	.display-4 {
+	.article-header {
 		font-size: calc(1.475rem + 2.7vw);
 		text-align: center;
 	}
@@ -204,10 +204,10 @@
 		flex-direction: row;
 		justify-content: center;
 	}
-	.display-1 {
+	.header-main {
 		font-size: 5rem;
 	}
-	.display-4 {
+	.article-header {
 		font-size: 3.5rem;
 		text-align: center;
 	}
@@ -247,10 +247,10 @@
 }
 /* Desktop */
 @media only screen and (min-width: 1400px) {
-	.display-1 {
+	.header-main {
 		font-size: 5rem;
 	}
-	.display-4 {
+	.article-header {
 		text-align: center;
 		font-size: 3.5rem;
 	}
@@ -325,8 +325,8 @@ a:hover:not(.nav-link, .navbar-brand) {
 :is(ul, ol):not(.navbar-nav) li::before {
 	content: "- ";
 }
-.display-1,
-.display-4 {
+.header-main,
+.article-header {
 	font-weight: 500;
 }
 .article-text {
@@ -395,10 +395,10 @@ blockquote p::before {
 	align-items: center;
 	justify-content: center;
 }
-.display-1 {
+.header-main {
 	margin: 0;
 }
-.display-4 {
+.article-header {
 	margin-bottom: 0.5rem;
 }
 .article-body {
