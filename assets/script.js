@@ -45,6 +45,7 @@ function playSound() {
 	audio.play();
 }
 
+// Navbar collapsing
 var open = false;
 function toggleNav() {
 	if (!open) {
@@ -57,7 +58,6 @@ function toggleNav() {
 		closeNav();
 	}
 }
-
 function closeNav() {
 	if (open) {
 		document.getElementById("nav-collapsing").style.width = "0";
