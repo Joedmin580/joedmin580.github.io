@@ -385,7 +385,7 @@ main {
 }
 article {
 	padding: 4rem 3rem;
-	height: calc(100vh - 11rem) !important;
+	height: calc(100vh - 11rem);
 	display: flex;
 	align-items: center;
 }
@@ -486,14 +486,14 @@ blockquote p::before {
 	opacity: 70%;
 }
 .active {
-	color: #d53900 !important;
+	color: #d53900;
 	opacity: 90%;
 }
 a:not(.nav-link):not(.nav-brand) {
 	color: #d53900;
 }
 a:not(.nav-brand):hover {
-	color: #c53500 !important;
+	color: #c53500;
 	transition: ease-in-out 0.2s;
 	opacity: 100%;
 }
