@@ -411,7 +411,7 @@ a:hover:not(.nav-link, .nav-brand) {
 	width: 3rem;
 	height: 3rem;
 	z-index: 2077;
-	margin: 0 0.3rem;
+	margin: 0 0.4rem;
 }
 .nav-links {
 	display: flex;
@@ -479,14 +479,14 @@ blockquote p::before {
 	padding: 0;
 }
 .center-text {
-	text-align: center;
+	text-align: center !important;
 }
 .center-self {
 	margin: 0 auto;
 }
 .center-screen {
 	display: flex;
-	justify-content: center;
+	justify-content: center !important;
 }
 .img-inline {
 	width: 0.9rem;
@@ -584,9 +584,6 @@ a:not(.nav-brand):hover {
 	background-color: transparent;
 	border: none;
 	color: inherit;
-}
-.nav-toggler {
-	background-image: url("/media/icons/hamburger-menu.svg");
 }
 
 /* Animations */
