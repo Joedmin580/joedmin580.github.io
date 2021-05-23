@@ -20,17 +20,13 @@
 		margin: 0 !important;
 		justify-content: center;
 		background-color: var(--dark-blue);
-		transition: 0.5s;
-	}
-	main {
-		transition: 0.5s;
 	}
 	.nav-link-wrapper {
 		margin: 0.5rem auto !important;
 		width: 10rem;
 	}
 	.nav-link {
-		opacity: 100% !important;
+		opacity: 100%;
 	}
 	:is(.bg-blue, .bg-black) .article-body {
 		flex: 0 0 auto;
@@ -102,6 +98,30 @@
 }
 /* Phones Landscape */
 @media only screen and (max-width: 900px) and (orientation: landscape) {
+	.nav-toggler {
+		display: inline !important;
+		z-index: 2033;
+		margin: 0 0.3rem;
+	}
+	.nav-links {
+		width: 0;
+		overflow: hidden;
+		flex-direction: column !important;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0 !important;
+		justify-content: center;
+		background-color: var(--dark-blue);
+	}
+	.nav-link-wrapper {
+		margin: 0.5rem auto !important;
+		width: 10rem;
+	}
+	.nav-link {
+		opacity: 100%;
+	}
 	:is(ol, ul):not(.nav-links) {
 		margin: 0;
 		padding: 0;
@@ -176,6 +196,30 @@
 }
 /* Tablets */
 @media only screen and (min-width: 900px) and (orientation: portrait) {
+	.nav-toggler {
+		display: inline !important;
+		z-index: 2033;
+		margin: 0 0.3rem;
+	}
+	.nav-links {
+		width: 0;
+		overflow: hidden;
+		flex-direction: column !important;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0 !important;
+		justify-content: center;
+		background-color: var(--dark-blue);
+	}
+	.nav-link-wrapper {
+		margin: 0.5rem auto !important;
+		width: 10rem;
+	}
+	.nav-link {
+		opacity: 100%;
+	}
 	.bg-black,
 	.bg-blue {
 		flex-direction: column-reverse;
@@ -224,6 +268,9 @@
 }
 /* Desktop */
 @media only screen and (min-width: 900px) and (orientation: landscape) {
+	.nav-link {
+		opacity: 70%;
+	}
 	.header-main {
 		font-size: 5rem;
 	}
@@ -452,6 +499,10 @@ blockquote p::before {
 :is(.bg-blue, .bg-black) .placeholder {
 	width: 65%;
 }
+.nav-toggler {
+	width: 3rem;
+	height: 3rem;
+}
 
 /* Colors */
 .navbar {
@@ -463,7 +514,6 @@ blockquote p::before {
 .nav-link {
 	color: #f0f8ff;
 	transition: ease-in-out 0.2s;
-	opacity: 70%;
 }
 .active {
 	color: #d53900;
@@ -527,6 +577,20 @@ a:not(.nav-brand):hover {
 	background-color: transparent;
 	border: none;
 	color: inherit;
+}
+.nav-toggler {
+	background-image: url("/media/icons/hamburger-menu.svg");
+}
+
+/* Animations */
+main {
+	transition: 0.5s;
+}
+.nav-brand {
+	transition: 0.5s;
+}
+.nav-links {
+	transition: 0.5s;
 }
 
 /* Other */
