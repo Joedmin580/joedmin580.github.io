@@ -51,11 +51,16 @@ function toggleNav() {
 		document.getElementById("nav-collapsing").style.width = "15rem";
 		document.getElementById("bright-change").style.filter =
 			"brightness(60%)";
+		document.getElementById("nav-brand").style.filter = "brightness(60%)";
 		open = true;
 	} else {
-		document.getElementById("nav-collapsing").style.width = "0";
-		document.getElementById("bright-change").style.filter =
-			"brightness(100%)";
-		open = false;
+		closeNav();
 	}
+}
+
+function closeNav() {
+	document.getElementById("nav-collapsing").style.width = "0";
+	document.getElementById("bright-change").style.filter = "brightness(100%)";
+	document.getElementById("nav-brand").style.filter = "brightness(100%)";
+	open = false;
 }
