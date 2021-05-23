@@ -13,12 +13,6 @@
 			content="WWII, Tanks, T-34, Sherman, Churchill, Hellcat, KV-1, Tiger I, Panther, Cromwell, History, USSR, Nazi Germany, Great Britain, USA"
 		/>
 		<title>Tanks of WWII</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-			crossorigin="anonymous"
-		/>
 		<link rel="stylesheet" href="/assets/normalize.css" />
 		<link rel="stylesheet" href="/assets/style.css" />
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -26,67 +20,57 @@
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-blue-dark fixed-top">
-			<section class="container-fluid">
-				<a class="navbar-brand" href="/" title="Home">Joedmin's page</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div
-					class="collapse navbar-collapse"
-					id="navbarSupportedContent"
-				>
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item active">
-							<a
-								class="nav-link"
-								href="./alien.html"
-								title="Page about WWII tanks"
-								>WWII Tanks</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="/pages/alien.html"
-								title="Golden opportunity"
-								>Get on Nostromo</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="/pages/quotes.html"
-								title="Quotes of famous people"
-								>Quotes</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="https://github.com/Joedmin580"
-								target="_blank"
-								title="My GitHub profile"
-								rel="noopener noreferrer"
-								>GitHub</a
-							>
-						</li>
-					</ul>
-				</div>
-			</section>
+		<nav class="navbar bg-blue-dark">
+			<div class="nav-brand-wrapper" id="bright-change">
+				<a class="nav-brand" href="/" title="Home">Joedmin's page</a>
+			</div>
+			<span class="nav-toggler clickable" onclick="toggleNav()"
+				><img src="/media/icons/hamburger-menu.svg"
+			/></span>
+			<ul class="nav-links" id="nav-collapsing">
+				<li class="nav-link-wrapper">
+					<a class="nav-link" href="/" title="Home">Home</a>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link active"
+						href="/pages/tanks.html"
+						title="Page about WWII tanks"
+						>WWII Tanks</a
+					>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="/pages/alien.html"
+						title="Golden opportunity"
+						>Get on Nostromo</a
+					>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="/pages/quotes.html"
+						title="Quotes of famous people"
+						>Quotes</a
+					>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="https://github.com/Joedmin580"
+						target="_blank"
+						title="My GitHub profile"
+						rel="noopener noreferrer"
+						>GitHub</a
+					>
+				</li>
+			</ul>
 		</nav>
 		<!-- Articles -->
-		<main>
+		<main onclick="closeNav()" id="bright-change">
 			<article class="bg-blue welcome">
-				<h1 class="display-1">WWII Tanks</h1>
+				<h1 class="header-main">WWII Tanks</h1>
 				<p class="hint">Scroll down for more</p>
 			</article>
 			<article class="bg-white">
@@ -95,7 +79,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">World War II</h1>
+					<h1 class="article-header">World War II</h1>
 					<p class="article-text">
 						As you may know, WWII lasted from 1939 to 1945 and the
 						main powers there were the Soviet Union, Nazi Germany,
@@ -144,7 +128,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">Soviet tanks</h1>
+					<h1 class="article-header">Soviet tanks</h1>
 					<p class="article-text">
 						For me is one of the most known soviet tanks, the medium
 						tank T-34 and its later modifications like the T-34/85.
@@ -185,7 +169,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">German tanks</h1>
+					<h1 class="article-header">German tanks</h1>
 					<p class="article-text">
 						The Pz. V Panther was a German medium tank that was
 						created to counter Soviet T-34s and replace the Pz. III
@@ -261,7 +245,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">British tanks</h1>
+					<h1 class="article-header">British tanks</h1>
 					<p class="article-text">
 						The Cromwell tank was the 1st tank in service combining
 						high speed and reasonable armor. Its 1st action was in
@@ -292,7 +276,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">American tanks</h1>
+					<h1 class="article-header">American tanks</h1>
 					<p class="article-text">
 						M18 Hellcat was the fastest armored fighting vehicle
 						used by the USA, which was caused by minimal armor and
@@ -346,7 +330,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">Battle reconstruction</h1>
+					<h1 class="article-header">Battle reconstruction</h1>
 					<p class="article-text">
 						Reconstruction of the battle of the Allies' meeting on
 						the Elbe (a river in the Czech Republic), which was
@@ -376,11 +360,7 @@
 			</article>
 		</main>
 		<!-- Script -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-			crossorigin="anonymous"
-		></script>
+		<script src="/assets/script.js"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 			AOS.init();

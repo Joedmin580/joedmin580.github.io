@@ -14,12 +14,6 @@
 		/>
 		<meta name="theme-color" content="#0c0c0c" />
 		<title>Nostromo: Discover the unknown!</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-			crossorigin="anonymous"
-		/>
 		<link rel="stylesheet" href="/assets/normalize.css" />
 		<link rel="stylesheet" href="/assets/style.css" />
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -27,67 +21,57 @@
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-			<section class="container-fluid">
-				<a class="navbar-brand" href="/" title="Home">Joedmin's page</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div
-					class="collapse navbar-collapse rounded"
-					id="navbarSupportedContent"
-				>
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="/pages/tanks.html"
-								title="Page about WWII tanks"
-								>WWII Tanks</a
-							>
-						</li>
-						<li class="nav-item active">
-							<a
-								class="nav-link"
-								href="./alien.html"
-								title="Golden opportunity"
-								>Get on Nostromo</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="/pages/quotes.html"
-								title="Quotes of famous people"
-								>Quotes</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="https://github.com/Joedmin580"
-								target="_blank"
-								title="My GitHub profile"
-								rel="noopener noreferrer"
-								>GitHub</a
-							>
-						</li>
-					</ul>
-				</div>
-			</section>
+		<nav class="navbar bg-black">
+			<div class="nav-brand-wrapper" id="bright-change">
+				<a class="nav-brand" href="/" title="Home">Joedmin's page</a>
+			</div>
+			<span class="nav-toggler clickable" onclick="toggleNav()"
+				><img src="/media/icons/hamburger-menu.svg"
+			/></span>
+			<ul class="nav-links" id="nav-collapsing">
+				<li class="nav-link-wrapper">
+					<a class="nav-link" href="/" title="Home">Home</a>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="/pages/tanks.html"
+						title="Page about WWII tanks"
+						>WWII Tanks</a
+					>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link active"
+						href="/pages/alien.html"
+						title="Golden opportunity"
+						>Get on Nostromo</a
+					>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="/pages/quotes.html"
+						title="Quotes of famous people"
+						>Quotes</a
+					>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="https://github.com/Joedmin580"
+						target="_blank"
+						title="My GitHub profile"
+						rel="noopener noreferrer"
+						>GitHub</a
+					>
+				</li>
+			</ul>
 		</nav>
-		<!-- Article -->
-		<main>
+		<!-- Articles -->
+		<main onclick="closeNav()" id="bright-change">
 			<article class="bg-black welcome">
-				<h1 class="display-1">Welcome, people!</h1>
+				<h1 class="header-main">Welcome, people!</h1>
 				<p class="hint">Scroll down for more</p>
 			</article>
 			<article class="bg-white">
@@ -96,7 +80,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">About us</h1>
+					<h1 class="article-header">About us</h1>
 					<p class="article-text">
 						Weyland-Yutani Corporation as you know it now was
 						founded in 2099 by the merger of Weyland Corp and the
@@ -120,7 +104,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">Nostromo</h1>
+					<h1 class="article-header">Nostromo</h1>
 					<p class="article-text">
 						Nostromo is our newest commercial towing vehicle. It is
 						based
@@ -151,7 +135,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">Get on board!</h1>
+					<h1 class="article-header">Get on board!</h1>
 					<p class="article-text">
 						Would you like to tak a part on space colonization? You
 						are lucky! You have a chance to become a part of the
@@ -216,7 +200,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">What will you get?</h1>
+					<h1 class="article-header">What will you get?</h1>
 					<p class="article-text">
 						You will travel through
 						<span class="highlight-lime">space</span>, meet
@@ -242,7 +226,7 @@
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
-					<h1 class="display-4">Contact us</h1>
+					<h1 class="article-header">Contact us</h1>
 					<p class="article-text">
 						Are you interested?
 						<span class="highlight-lime">Don't hesitate</span> and
@@ -263,7 +247,7 @@
 			<!-- Gallery -->
 			<article class="bg-black flex-coll center-screen">
 				<h1
-					class="display-4"
+					class="article-header"
 					data-aos="fade-up"
 					data-aos-duration="500"
 				>
@@ -339,11 +323,6 @@
 			</article>
 		</main>
 		<!-- Scripts -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-			crossorigin="anonymous"
-		></script>
 		<script src="/assets/script.js"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
