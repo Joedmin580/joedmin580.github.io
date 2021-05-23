@@ -4,9 +4,26 @@
 /* Responsible */
 /* Phones */
 @media only screen and (max-width: 900px) and (orientation: portrait) {
-	:is(ol, ul):not(.nav-links) {
-		margin: -10rem;
-		padding: 0;
+	.nav-toggler {
+		display: inline !important;
+		z-index: 2033;
+		margin: 0 0.3rem;
+	}
+	.nav-links {
+		width: 0;
+		overflow: hidden;
+		flex-direction: column !important;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0 !important;
+		justify-content: center;
+		background-color: var(--dark-blue);
+	}
+	.nav-link-wrapper {
+		margin: 0.5rem auto !important;
+		width: 10rem;
 	}
 	:is(.bg-blue, .bg-black) .article-body {
 		flex: 0 0 auto;
@@ -319,6 +336,9 @@ a:hover:not(.nav-link, .nav-brand) {
 	align-self: center;
 	margin: 0 1rem;
 	font-weight: 600;
+}
+.nav-toggler {
+	display: none;
 }
 .nav-links {
 	margin: 0 1rem;
