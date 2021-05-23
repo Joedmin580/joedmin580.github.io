@@ -20,10 +20,17 @@
 		margin: 0 !important;
 		justify-content: center;
 		background-color: var(--dark-blue);
+		transition: 0.5s;
+	}
+	main {
+		transition: 0.5s;
 	}
 	.nav-link-wrapper {
 		margin: 0.5rem auto !important;
 		width: 10rem;
+	}
+	.nav-link {
+		opacity: 100% !important;
 	}
 	:is(.bg-blue, .bg-black) .article-body {
 		flex: 0 0 auto;

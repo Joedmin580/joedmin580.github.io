@@ -49,9 +49,13 @@ var open = false;
 function toggleNav() {
 	if (!open) {
 		document.getElementById("nav-collapsing").style.width = "15rem";
+		document.getElementById("bright-change").style.filter =
+			"brightness(60%)";
 		open = true;
 	} else {
 		document.getElementById("nav-collapsing").style.width = "0";
+		document.getElementById("bright-change").style.filter =
+			"brightness(100%)";
 		open = false;
 	}
 }
