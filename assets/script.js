@@ -50,9 +50,9 @@ var open = false;
 function toggleNav() {
 	if (!open) {
 		document.getElementById("nav-collapsing").style.width = "15rem";
-		document.getElementById("bright-change").style.filter =
-			"brightness(60%)";
-		document.getElementById("nav-brand").style.filter = "brightness(60%)";
+		document.querySelectorAll("[id=bright-change]").forEach((item) => {
+			item.style.filter = "brightness(30%)";
+		});
 		open = true;
 	} else {
 		closeNav();
@@ -61,9 +61,9 @@ function toggleNav() {
 function closeNav() {
 	if (open) {
 		document.getElementById("nav-collapsing").style.width = "0";
-		document.getElementById("bright-change").style.filter =
-			"brightness(100%)";
-		document.getElementById("nav-brand").style.filter = "brightness(100%)";
+		document.querySelectorAll("[id=bright-change]").forEach((item) => {
+			item.style.filter = "brightness(100%)";
+		});
 		open = false;
 	}
 }
