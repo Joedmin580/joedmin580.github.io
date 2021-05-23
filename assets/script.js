@@ -44,3 +44,14 @@ function playSound() {
 	console.log(`Playing ${sound}`);
 	audio.play();
 }
+
+var open = false;
+function toggleNav() {
+	if (!open) {
+		document.getElementById("nav-collapsing").style.width = "15rem";
+		open = true;
+	} else {
+		document.getElementById("nav-collapsing").style.width = "0";
+		open = false;
+	}
+}
