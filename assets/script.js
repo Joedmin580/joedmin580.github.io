@@ -59,8 +59,11 @@ function toggleNav() {
 }
 
 function closeNav() {
-	document.getElementById("nav-collapsing").style.width = "0";
-	document.getElementById("bright-change").style.filter = "brightness(100%)";
-	document.getElementById("nav-brand").style.filter = "brightness(100%)";
-	open = false;
+	if (open) {
+		document.getElementById("nav-collapsing").style.width = "0";
+		document.getElementById("bright-change").style.filter =
+			"brightness(100%)";
+		document.getElementById("nav-brand").style.filter = "brightness(100%)";
+		open = false;
+	}
 }
