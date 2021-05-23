@@ -15,17 +15,20 @@ function redirect() {
 }
 
 function getQuote() {
-	fetch("https://api.quotable.io/random")
-		.then(function (response) {
-			return response.json();
-		})
-		.then(function (data) {
-			document.getElementById("quote").innerHTML = data.content;
-			document.getElementById("author").innerHTML = "- " + data.author;
+	if (!isNavOpen) {
+		fetch("https://api.quotable.io/random")
+			.then(function (response) {
+				return response.json();
+			})
+			.then(function (data) {
+				document.getElementById("quote").innerHTML = data.content;
+				document.getElementById("author").innerHTML =
+					"- " + data.author;
 
-			console.log(data.content);
-			console.log(data.author);
-		});
+				console.log(data.content);
+				console.log(data.author);
+			});
+	}
 }
 
 function playSound() {
@@ -46,24 +49,24 @@ function playSound() {
 }
 
 // Navbar collapsing
-var open = false;
+var isNavOpen = false;
 function toggleNav() {
-	if (!open) {
+	if (!isNavOpen) {
 		document.getElementById("nav-collapsing").style.width = "15rem";
 		document.querySelectorAll("[id=bright-change]").forEach((item) => {
 			item.style.filter = "brightness(30%)";
 		});
-		open = true;
+		isNavOpen = true;
 	} else {
 		closeNav();
 	}
 }
 function closeNav() {
-	if (open) {
+	if (isNavOpen) {
 		document.getElementById("nav-collapsing").style.width = "0";
 		document.querySelectorAll("[id=bright-change]").forEach((item) => {
 			item.style.filter = "brightness(100%)";
 		});
-		open = false;
+		isNavOpen = false;
 	}
 }
