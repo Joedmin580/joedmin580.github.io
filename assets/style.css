@@ -198,55 +198,8 @@
 		display: none;
 	}
 }
-/* Tablets Landscape */
-@media only screen and (min-width: 900px) and (orientation: landscape) {
-	.bg-white {
-		flex-direction: row;
-		justify-content: center;
-	}
-	.header-main {
-		font-size: 5rem;
-	}
-	.article-header {
-		font-size: 3.5rem;
-		text-align: center;
-	}
-	.article-text {
-		max-width: 50rem;
-	}
-	.gallery {
-		flex-direction: column;
-		gap: 1rem;
-	}
-	.gallery-item {
-		height: auto;
-		width: auto;
-		max-width: calc(100vw * 0.5);
-		max-height: calc(100vh * 0.3);
-		text-align: center;
-	}
-	.gallery-3 {
-		gap: 2rem;
-		flex-direction: row;
-	}
-	.gallery-3 .gallery-item {
-		height: auto;
-		width: auto;
-		max-width: calc(100vw * 0.3);
-		max-height: calc(100vh * 0.5);
-		text-align: center;
-	}
-	.img-half {
-		max-height: calc(100vh * 0.4);
-		max-width: calc(100vw * 0.4);
-		margin: 0.5rem;
-	}
-	.placeholder {
-		width: 50%;
-	}
-}
 /* Desktop */
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 900px) and (orientation: landscape) {
 	.header-main {
 		font-size: 5rem;
 	}
