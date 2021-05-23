@@ -2,15 +2,15 @@
 
 ## About
 
-My personal website used for testing and learning writing static websites using HTML, CSS and JS.
+My personal website is used for testing and learning writing static websites using HTML, CSS and JS.
 
 ## Content
 
-* [Home page / personal "blog"](https://joedmin580.github.io/)
-* [Page devoted to WWII tanks](https://joedmin580.github.io/pages/tanks.html)
+* [Home](https://joedmin580.github.io/)
+* [WWII tanks](https://joedmin580.github.io/pages/tanks.html)
 * [Alien (1979) fan page - Weyland-Yutani Corp invitation on Nostromo](https://joedmin580.github.io/pages/alien.html)
-* [Page with inspiring and motivating quotes written by famous people](https://joedmin580.github.io/pages/quotes.html)
-* [Redirect page](https://joedmin580.github.io/pages/redirect.html) which is accessible via QR code on my laptop, leads to random link from array
+* [Inspiring and motivating quotes](https://joedmin580.github.io/pages/quotes.html)
+* [Redirect page](https://joedmin580.github.io/pages/redirect.html) accessible via QR code, leads to random link from array
 * Secret page accessible through a chance on [redirect page](https://joedmin580.github.io/pages/redirect.html)
 * Custom Error 404 page
 
