@@ -503,6 +503,10 @@ blockquote p::before {
 	display: flex;
 	flex-direction: column;
 }
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
 .no-mp {
 	margin: 0;
 	padding: 0;
