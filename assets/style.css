@@ -241,11 +241,16 @@
 		max-width: 40rem;
 		font-size: 1.4rem;
 	}
-	.gallery {
-		flex-direction: column;
-		gap: 1rem;
+	.quote,
+	.author {
+		font-size: 1.2rem;
+		max-width: 30rem;
 	}
-	.gallery-item {
+	.gallery,
+	.gallery-3 {
+		gap: 0.5rem;
+	}
+	.gallery .gallery-item {
 		height: auto;
 		width: auto;
 		max-width: calc(100vw * 0.5);
@@ -266,8 +271,82 @@
 		display: none;
 	}
 }
-/* Desktop */
+/* Tablets landscape */
 @media only screen and (min-width: 900px) and (orientation: landscape) {
+	.nav-toggler {
+		display: none;
+	}
+	.nav-links {
+		margin: 0 1rem;
+		flex-direction: row;
+	}
+	.nav-link-wrapper {
+		margin: 1rem 0;
+	}
+	.nav-link {
+		opacity: 70%;
+	}
+	.header-main {
+		font-size: 5rem;
+	}
+	.article-header {
+		text-align: center;
+		font-size: 3.5rem;
+	}
+	.article-body {
+		line-height: 2.5rem;
+		max-width: 50rem;
+		padding: 1.2rem;
+	}
+	.article-text,
+	li:not(.nav-link-wrapper) {
+		font-size: 1.3rem;
+	}
+	article:is(.bg-white, .bg-blue, .bg-black):not(.welcome) {
+		justify-content: flex-start;
+	}
+	article:is(.bg-blue, .bg-black) .article-body {
+		align-items: flex-end;
+	}
+	.quote,
+	.author {
+		font-size: 1.2rem;
+		max-width: 30rem;
+	}
+	.gallery,
+	.gallery-3 {
+		gap: 0.5rem;
+	}
+	.gallery {
+		flex-direction: column;
+	}
+	.gallery .gallery-item {
+		height: auto;
+		max-height: 100%;
+		width: calc(100vw * 0.4);
+		max-width: 100%;
+		text-align: center;
+	}
+	.gallery-3 .gallery-item {
+		height: auto;
+		max-height: 100%;
+		width: calc(100vw * 0.3);
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.img-half {
+		max-height: calc(100vh * 0.35);
+		max-width: calc(100vw * 0.35);
+		margin: 0.5rem;
+	}
+	.content-end-line {
+		justify-content: end;
+	}
+}
+
+/* Desktop */
+@media only screen and (min-width: 1500px) and (orientation: landscape) {
 	.nav-toggler {
 		display: none;
 	}
@@ -310,11 +389,12 @@
 	}
 	.gallery {
 		flex-direction: row;
+		gap: 0.5rem;
 	}
 	.gallery-item {
 		height: auto;
 		max-height: 100%;
-		width: calc(100vw * 0.25);
+		width: calc(100vw * 0.2);
 		max-width: 100%;
 		text-align: center;
 	}
