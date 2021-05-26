@@ -670,7 +670,8 @@ main,
 .nav-brand,
 .nav-links,
 .nav-text-wrapper,
-.nav-brand-wrapper {
+.nav-brand-wrapper,
+.nav-link {
 	transition: 0.3s;
 }
 

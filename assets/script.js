@@ -56,6 +56,9 @@ function toggleNav() {
 		document.querySelectorAll("[id=bright-change]").forEach((item) => {
 			item.style.filter = "brightness(30%)";
 		});
+		document.querySelectorAll("[class=nav-link]").forEach((item) => {
+			item.style.opacity = "100%";
+		});
 		isNavOpen = true;
 	} else {
 		closeNav();
@@ -66,6 +69,9 @@ function closeNav() {
 		document.getElementById("nav-collapsing").style.width = "0";
 		document.querySelectorAll("[id=bright-change]").forEach((item) => {
 			item.style.filter = "brightness(100%)";
+		});
+		document.querySelectorAll("[class=nav-link]").forEach((item) => {
+			item.style.opacity = "0%";
 		});
 		isNavOpen = false;
 	}
