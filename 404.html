@@ -9,9 +9,57 @@
 		<link rel="stylesheet" href="/assets/style.css" />
 	</head>
 	<body>
-		<main style="margin: 0">
-			<article class="center-screen center-text">
-				<div>
+		<!-- Navbar -->
+		<nav class="navbar bg-blue-dark">
+			<div class="nav-brand-wrapper" id="bright-change">
+				<a class="nav-brand" href="/" title="Home">Joedmin's page</a>
+			</div>
+			<span class="nav-toggler clickable" onclick="toggleNav()"
+				><img src="/media/icons/hamburger-menu.svg"
+			/></span>
+			<ul class="nav-links" id="nav-collapsing">
+				<li class="nav-link-wrapper">
+					<a class="nav-link" href="/" title="Home">Home</a>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="/pages/tanks.html"
+						title="Page about WWII tanks"
+						>WWII Tanks</a
+					>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="/pages/alien.html"
+						title="Golden opportunity"
+						>Get on Nostromo</a
+					>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="/pages/quotes.html"
+						title="Quotes of famous people"
+						>Quotes</a
+					>
+				</li>
+				<li class="nav-link-wrapper">
+					<a
+						class="nav-link"
+						href="https://github.com/Joedmin580"
+						target="_blank"
+						title="My GitHub profile"
+						rel="noopener noreferrer"
+						>GitHub</a
+					>
+				</li>
+			</ul>
+		</nav>
+		<main id="bright-change" class="bg-blue">
+			<article class="center-screen">
+				<div class="article-body center-text">
 					<h1 class="header-main">404</h1>
 					<h1 class="article-header">Page not found!</h1>
 					<p>
@@ -22,5 +70,6 @@
 				</div>
 			</article>
 		</main>
+		<script src="/assets/script.js"></script>
 	</body>
 </html>
