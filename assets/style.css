@@ -666,12 +666,9 @@ a:not(.nav-brand):hover {
 }
 
 /* Animations */
-main,
-.nav-brand,
 .nav-links,
-.nav-text-wrapper,
-.nav-brand-wrapper,
-.nav-link {
+.nav-link,
+#bright-change {
 	transition: 0.3s;
 }
 
