@@ -152,6 +152,9 @@
 		justify-content: stretch;
 		flex-direction: column;
 	}
+	.gallery.fill-article {
+		flex-direction: row;
+	}
 	/* Images */
 	.img-half {
 		height: auto;
@@ -280,9 +283,10 @@
 	/* Galleries */
 	.gallery {
 		gap: 0.5rem;
-	}
-	.gallery {
 		flex-direction: column;
+	}
+	.gallery.fill-article {
+		flex-direction: row !important;
 	}
 	/* Images */
 	.img-half {
@@ -638,9 +642,10 @@ a:not(.nav-brand):hover {
 }
 
 /* Animations */
+body > *:not(nav, script),
+.nav-brand-wrapper,
 .nav-links,
-.nav-link,
-#bright-change {
+.nav-link {
 	transition: 0.3s;
 }
 
