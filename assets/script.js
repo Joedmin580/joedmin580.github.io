@@ -50,9 +50,13 @@ var isNavOpen = false;
 function toggleNav() {
 	if (!isNavOpen) {
 		document.getElementById("nav-collapsing").style.width = "15rem";
-		document.querySelectorAll("[id=bright-change]").forEach((item) => {
-			item.style.filter = "brightness(30%)";
-		});
+		document
+			.querySelectorAll(
+				"body *:not(nav, .nav-links, .nav-links *, .nav-toggler ,.nav-toggler *)"
+			)
+			.forEach((item) => {
+				item.style.filter = "brightness(30%)";
+			});
 		document.querySelectorAll("[class=nav-link]").forEach((item) => {
 			item.style.opacity = "100%";
 		});
@@ -64,9 +68,13 @@ function toggleNav() {
 function closeNav() {
 	if (isNavOpen) {
 		document.getElementById("nav-collapsing").style.width = "0";
-		document.querySelectorAll("[id=bright-change]").forEach((item) => {
-			item.style.filter = "brightness(100%)";
-		});
+		document
+			.querySelectorAll(
+				"body *:not(nav, .nav-links, .nav-links *, .nav-toggler ,.nav-toggler *)"
+			)
+			.forEach((item) => {
+				item.style.filter = "brightness(100%)";
+			});
 		document.querySelectorAll("[class=nav-link]").forEach((item) => {
 			item.style.opacity = "0%";
 		});
