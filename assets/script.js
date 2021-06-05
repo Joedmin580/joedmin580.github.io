@@ -51,9 +51,7 @@ function toggleNav() {
 	if (!isNavOpen) {
 		document.getElementById("nav-collapsing").style.width = "15rem";
 		document
-			.querySelectorAll(
-				"body *:not(nav, .nav-links, .nav-links *, .nav-toggler ,.nav-toggler *)"
-			)
+			.querySelectorAll("body > *:not(nav, script), .nav-brand-wrapper")
 			.forEach((item) => {
 				item.style.filter = "brightness(30%)";
 			});
@@ -61,6 +59,7 @@ function toggleNav() {
 			item.style.opacity = "100%";
 		});
 		isNavOpen = true;
+		document.getElementsByTagName("body")[0].style.overflow = "hidden";
 	} else {
 		closeNav();
 	}
@@ -69,9 +68,7 @@ function closeNav() {
 	if (isNavOpen) {
 		document.getElementById("nav-collapsing").style.width = "0";
 		document
-			.querySelectorAll(
-				"body *:not(nav, .nav-links, .nav-links *, .nav-toggler ,.nav-toggler *)"
-			)
+			.querySelectorAll("body > *:not(nav, script), .nav-brand-wrapper")
 			.forEach((item) => {
 				item.style.filter = "brightness(100%)";
 			});
@@ -79,5 +76,6 @@ function closeNav() {
 			item.style.opacity = "0%";
 		});
 		isNavOpen = false;
+		document.getElementsByTagName("body")[0].style.overflow = "visible";
 	}
 }
