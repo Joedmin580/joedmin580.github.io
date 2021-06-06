@@ -79,3 +79,4 @@ function closeNav() {
 		document.getElementsByTagName("body")[0].style.overflow = "visible";
 	}
 }
+document.querySelector("main").addEventListener("click", closeNav);
