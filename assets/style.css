@@ -3,7 +3,7 @@
 
 /* Responsible */
 /* Phones Portrait */
-@media only screen and (min-width: 900px) and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
 	/* Navbar */
 	.nav-brand-wrapper {
 		width: 100vw;
@@ -30,7 +30,7 @@
 		display: inline;
 	}
 	/* Articles */
-	article:is(.bg-black, .bg-blue):not(.welcome) {
+	article:is(.bg-black, .bg-blue):not(.welcome, .bg-white) {
 		flex-direction: column-reverse;
 		justify-content: center;
 	}
@@ -69,7 +69,6 @@
 		flex-direction: row;
 		gap: 0.4rem;
 		justify-content: space-around;
-		width: 40rem;
 	}
 	/* Images */
 	.img-half {
@@ -228,6 +227,9 @@
 	.gallery,
 	.gallery-half {
 		gap: 0.5rem;
+	}
+	.gallery-half {
+		width: 40rem;
 	}
 	.gallery-item {
 		height: auto;
