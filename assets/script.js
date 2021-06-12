@@ -80,6 +80,16 @@ function closeNav() {
 	}
 }
 
+function changeElementAttribute() {
+	document.querySelectorAll(".gallery-half > *").forEach((item) => {
+		if (window.innerHeight > window.innerWidth) {
+			item.setAttribute("data-aos-offset", "10");
+		} else if (window.innerHeight < window.innerWidth) {
+			item.setAttribute("data-aos-offset", "100");
+		}
+	});
+}
+
 // On page load
 document.querySelector("main").addEventListener("click", closeNav);
 document
@@ -90,3 +100,5 @@ document
 		item.setAttribute("data-aos", "fade-up");
 		item.setAttribute("data-aos-duration", "500");
 	});
+document.onload = changeElementAttribute();
+window.addEventListener("resize", changeElementAttribute);
