@@ -163,6 +163,7 @@
 	.gallery-half {
 		justify-content: stretch;
 		flex-direction: column;
+		width: 100%;
 	}
 	/* Images */
 	.img-half {
@@ -417,7 +418,6 @@ h4 {
 	flex-grow: 0;
 	flex-shrink: 1;
 	gap: 0.5rem;
-	width: 100%;
 }
 .gallery {
 	height: 90%;
