@@ -3,6 +3,7 @@
 ## About
 
 My personal website is used for testing and learning writing static websites using HTML, CSS and JS.
+It's also used as my schoolwork 😄.
 
 ## Content
 
