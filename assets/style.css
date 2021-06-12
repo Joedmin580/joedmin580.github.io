@@ -60,6 +60,7 @@
 	/* Galleries */
 	.gallery {
 		flex-direction: column;
+		height: 100%;
 	}
 	.gallery-half {
 		margin-top: 0.5rem;
@@ -134,7 +135,7 @@
 		font-size: 1.25rem;
 	}
 	.article-body {
-		max-width: 75svw;
+		max-width: 55vw;
 	}
 	.article-row {
 		display: flex;
@@ -422,8 +423,8 @@ h4 {
 	height: 90%;
 }
 .gallery-item {
+	height: 100%;
 	width: 100%;
-	height: auto;
 	object-fit: contain;
 }
 .img-inline {
