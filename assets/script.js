@@ -79,4 +79,14 @@ function closeNav() {
 		document.getElementsByTagName("body")[0].style.overflow = "visible";
 	}
 }
+
+// On page load
 document.querySelector("main").addEventListener("click", closeNav);
+document
+	.querySelectorAll(
+		"article:not(.welcome) > *:not(.placeholder, .gallery-half), .article-row > *, :is(.gallery, .gallery-half) > *"
+	)
+	.forEach((item) => {
+		item.setAttribute("data-aos", "fade-up");
+		item.setAttribute("data-aos-duration", "500");
+	});
