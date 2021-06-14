@@ -1,11 +1,11 @@
 # Joedmin's page
 
-## About
+## 🔎 About
 
 My personal website is used for testing and learning writing static websites using HTML, CSS and JS.
 It's also used as my schoolwork 😄.
 
-## Content
+## 📃 Content
 
 * [Home](https://joedmin580.github.io/)
 * [WWII tanks](https://joedmin580.github.io/pages/tanks.html)
@@ -15,7 +15,7 @@ It's also used as my schoolwork 😄.
 * Secret page accessible through a chance on [redirect page](https://joedmin580.github.io/pages/redirect.html)
 * Custom Error 404 page
 
-## Third-party libraries
+## 📚 Third-party libraries
 
 * [AOS](https://github.com/michalsnik/aos)
 * [Quotable](https://github.com/lukePeavey/quotable)
