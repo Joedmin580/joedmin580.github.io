@@ -67,6 +67,12 @@
 		flex-direction: row;
 		justify-content: space-around;
 	}
+	.gallery-half .gallery-item {
+		width: 50%;
+	}
+	.gallery .gallery-item {
+		height: 33.33333% !important;
+	}
 	/* Images */
 	.img-half {
 		max-width: calc(100vw * 0.7);
